@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+th {
+  color: #bf0d0d;
+  font-family: baskerville-urw;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.6em;
+  font-size: 1.5vw;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0px;
+
+}
+
+
+table {
+  font-family: baskerville-urw;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.3em;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0px;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.sqs-block-content-leopard{
+  background-image: url(images/leopard.jpg);
+  padding:50px;
+}
+
+.sqs-block-content-dollhouse{
+  background-image: url(images/theDollhouse.jpg);
+  padding:50px;
+}
+
+.sqs-block-content-flamingo{
+  background-image: url(images/flamingoFantasy.jpg);
+  padding:50px;
+}
+.sqs-block-content-golden{
+  background-image: url(images/goldenGlamour.jpg);
+  padding:50px;
+}
+
+td, th {
+  border: 1px solid #bf0d0d;
+  padding: 8px;
+  text-align: center;
+  background-color: #fdedee;
+  width: 12.5%;
+  
+}
+
+td {
+  font-size: 1vw;
+}
+
+tr {
+  height: 3vh;
+}
+
+.header{
+  background-color: #ffffff;
+  color: #bf0d0d;
+  text-align: left;
+  font-size: 1.5vw;
+}
+
+.header img{
+  width: 25vw;
+}
+</style>
+  <script>
+    function styleTable(){
+var x = document.getElementsByTagName('TD');
+for (var i= x.length; i-->0;){
+  console.log(x.innerHTML)
+    if (x[i].innerHTML.indexOf('Sky Sirens')!= -1){
+        x[i].style.background= '#ffffff';
+    }
+    else if (x[i].innerHTML.indexOf('Insta')!= -1 || x[i].innerHTML.indexOf('gram')!= -1 || x[i].innerHTML.indexOf('Stretch')!= -1 || x[i].innerHTML.indexOf('Conditioning')!= -1 || x[i].innerHTML.indexOf('Handstand')!= -1){
+        x[i].style.background= '#fdf3cc';
+    }
+    else if (x[i].innerHTML.indexOf('Babydoll Fans')!= -1){
+        x[i].style.background= '#e9f6fc';
+    }
+    else if (x[i].innerHTML.indexOf('Feather Fantasy')!= -1){
+        x[i].style.background= '#cfe7f8';
+    }
+    else if (x[i].innerHTML.indexOf('Feather Fantasia')!= -1){
+        x[i].style.background= '#aad5f1';
+    }
+    else if (x[i].innerHTML.indexOf('Babydoll')!= -1){
+        x[i].style.background= '#e2d7e8';
+    }
+    else if (x[i].innerHTML.indexOf('Pearls')!= -1){
+        x[i].style.background= '#fef5e8';
+    }
+    else if (x[i].innerHTML.indexOf('Emeralds')!= -1){
+        x[i].style.background= '#f3f8f1';
+    }
+    else if (x[i].innerHTML.indexOf('Rubies')!= -1 || x[i].innerHTML.indexOf('Garnets')!= -1){
+        x[i].style.background= '#f6d6db';
+    }
+    else if (x[i].innerHTML.indexOf('Sapphires')!= -1){
+        x[i].style.background= '#cfdbf0';
+    }
+    else if (x[i].innerHTML.indexOf('Diamonds')!= -1){
+        x[i].style.background= '#ecf8fe';
+    }
+    else if (x[i].innerHTML.indexOf('Prepaid')!= -1){
+        x[i].style.background= '#fdedee';
+    }
+    else if (x[i].innerHTML.indexOf('Practice')!= -1){
+        x[i].style.background= '#ecf8fe';
+    }
+    else if (x[i].innerHTML.indexOf('with')!= -1){
+        x[i].style.background= '#fae9e6';
+    }
+    else {
+      x[i].style.background= '#ffffff';
+    }
+  }
+}
+  </script>
+</head>
+
+<body>
+
+
+<div class="sqs-block-content-leopard">
+
+<table>
+  <tbody>
+  <tr>
+    <td colspan = "3" class = 'header'><image src='images/leopardLuxe.png'></image><br>Leopard Luxe Timetable: Term 3 <br>26th April '21 - 13th June'21.</td>
+    <td colspan = "5" class = 'header'>When you book into a term at Sky Sirens,  you are booking into the same day and time every week for seven weeks. You must pay a 50% deposit to enrol and the remainder is due by week 2. For every additional class you enrol into,  you will receive $100 off your total (applied per person only). This discount will be applied at the studio upon final payment in week two (please ensure you select the "payment plan" option at checkout, as discounts are not refunded. If you miss a class, your "catch-up" must be within the same term and price tier. You must provide minimum 2 hours notice via email to qualify.  Email within 24 hours of the desired class to book your catch-up.</td>
+  </tr>
+  <tr> 
+    <th>Time</th>
+    <th>Monday</th>
+    <th>Tuesday</th>
+    <th> Wednesday </th>
+    <th> Thursday </th>
+    <th> Friday </th>
+    <th> Saturday </th>
+    <th> Sunday </th> </h2>
+  </tr>
+  <tr>
+    <th>9am</th>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> Emeralds Pole (Intermediate Two) with Sofia </td>
+    <td></td>
+  </tr>
+  <tr>
+    <th> 10am </th>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> Pearls Pole (Intermediate One) with Quench</td>
+    <td> </td>
+  </tr>
+   <tr>
+    <th> 11am </th>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> Babydoll Pole (Beginners) with Quench</td>
+    <td> </td>
+  </tr>
+   <tr>
+    <th> 12pm </th>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+<td> 12pm - 2pm Practice Time. Prepaid Session 1. $20 for everyone </td>
+    <td> Practice Time</td>
+  </tr>
+
+   <tr>
+    <th> 1pm </th>
+    <td> </td>
+    <td> Practice Time</td>
+    <td> Practice Time</td>
+    <td> Practice Time</td>
+    <td> Practice Time </td>
+    <td> 12pm - 2pm Practice Time. Prepaid Session 1. $20 for everyone </td>
+    <td> </td>
+  </tr>
+  
+  <tr>
+    <th> 2pm </th>
+    <td> </td>
+    <td> Practice Time</td>
+    <td> Practice Time</td>
+    <td> Practice Time</td>
+    <td> Practice Time </td>
+    <td> 12pm - 2pm Practice Time. Prepaid Session 1. $20 for everyone </td>
+    <td> 2-4pm Practice Time. Prepaid Session. $20 for everyone.e</td>
+  </tr>
+  
+  <tr>
+    <th> 3pm </th>
+    <td> </td>
+    <td> Practice Time</td>
+    <td> Practice Time</td>
+    <td> Practice Time</td>
+    <td> Practice Time </td>
+    <td> Practice Time</td>
+    <td> 2-4pm Practice Time. Prepaid Session. $20 for everyone.</td>
+  </tr>
+ 
+  <tr>
+    <th> 4pm </th>
+    <td> </td>
+    <td> Practice Time</td>
+    <td> Practice Time</td>
+    <td> Practice Time</td>
+    <td> Practice Time</td>
+    <td> Practice Time</td>
+    <td> 2-4pm Practice Time. Prepaid Session. $20 for everyone.</td>
+  </tr>
+  
+   <tr>
+    <th> 5pm </th>
+    <td> Emeralds Pole (Intermediate Two) with Rose</td>
+    <td> Rubies Pole (Intermediate Three) with Oryx</td>
+    <td> Pearls Pole (Intermediate One) with Arizona </td>
+    <td> Babydoll Pole (Beginners) with Baby </td>
+    <td> Pearls Pole (Intermediate One) with Sofia </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  
+   <tr>
+    <th> 6pm </th>
+    <td> Babydoll Pole (Beginners) with Rose</td>
+    <td> Contemporary Pole with Oryx</td>
+    <td> Emeralds Pole (Intermediate Two) with Arizona </td>
+    <td> Emeralds Pole (Intermediate Two) with Allegra </td>
+    <td> Sugar Pop Pole (Pop Music Pole) with Sofia </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  
+  <tr>
+    <th> 7pm </th>
+    <td> Sapphires Pole (Pre-Advanced) with Arizona </td>
+    <td> Babydoll Pole (Beginners) with Sofia </td>
+    <td> Rubies Pole (Intermediate Three) with Arizona </td>
+    <td> Pearls Pole (Intermediate One) with Gigi </td>
+    <td>  Babydoll Pole (Beginners) wity Indy</td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  
+   <tr>
+    <th> 8pm </th>
+    <td> Vixens Pole (Advanced Sexy Pole) with Arizona </td>
+    <td> Emeralds Pole (Intermediate Two) with Sofia </td>
+    <td> Pearls Pole (Intermediate Two) with Indy </td>
+    <td> Pearls Plus Pole (Intermediate 1-2) with Quench </td>
+    <td> Rubies Pole (Intermediate Three) with Sofia </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  
+   <tr>
+    <th> 9pm </th>
+    <td> Pearls Pole (Intermediate One) with Arizona </td>
+    <td> Vixenettes Pole (Sexy Pole) with Sofia </td>
+    <td> Babydoll Pole (Beginners) with Indy </td>
+    <td> Rubies Pole (Intermediate Three) with Quench </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+</tbody></table>
+
+
+</div>
+
+<div class="sqs-block-content-dollhouse">
+
+
+<table>
+  <tbody>
+<tr>
+    <td colspan = "3" class = 'header'><image src='images/Dollhouse.png'></image><br>The Dollhouse Timetable: Term 3 <br>26th April '21 - 13th June'21.</td>
+    <td colspan = "5" class = 'header'>When you book into a term at Sky Sirens,  you are booking into the same day and time every week for seven weeks. You must pay a 50% deposit to enrol and the remainder is due by week 2. For every additional class you enrol into,  you will receive $100 off your total (applied per person only). This discount will be applied at the studio upon final payment in week two (please ensure you select the "payment plan" option at checkout, as discounts are not refunded. If you miss a class, your "catch-up" must be within the same term and price tier. You must provide minimum 2 hours notice via email to qualify.  Email within 24 hours of the desired class to book your catch-up.</td>
+  </tr>
+
+    <tr>
+    <th>Time</th>
+    <th>Monday</th>
+    <th>Tuesday</th>
+    <th> Wednesday </th>
+    <th> Thursday </th>
+    <th> Friday </th>
+    <th> Saturday </th>
+    <th> Sunday </th>
+  </tr>
+  <tr>
+    <th>9am</th>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> Pearls lyra (Intermediate One) with Baby </td>
+    <td></td>
+  </tr>
+  <tr>
+    <th> 10am </th>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> Lyra-gram (Emeralds and Up) with Kitty </td>
+    <td> </td>
+  </tr>
+   <tr>
+    <th> 11am </th>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> VixenettesLyra (Sexy Lyra) with Baby </td>
+    <td> </td>
+  </tr>
+   <tr>
+    <th> 12pm </th>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+<td> 12pm - 2pm Practice Time. Prepaid Session 1. $20 for everyone </td>
+    <td> Practice Time</td>
+  </tr>
+
+   <tr>
+    <th> 1pm </th>
+    <td></td>
+    <td> Practice Time</td>
+    <td> Practice Time</td>
+    <td> Practice Time</td>
+    <td> Practice Time </td>
+    <td> 12pm - 2pm Practice Time. Prepaid Session 1. $20 for everyone </td>
+    <td> </td>
+  </tr>
+  
+  <tr>
+    <th> 2pm </th>
+    <td> </td>
+    <td> Practice Time</td>
+    <td> Practice Time</td>
+    <td> Practice Time</td>
+    <td> Practice Time </td>
+    <td> 12pm - 2pm Practice Time. Prepaid Session 1. $20 for everyone </td>
+    <td> 2-4pm Practice Time. Prepaid Session. $20 for everyone.e</td>
+  </tr>
+  
+  <tr>
+    <th> 3pm </th>
+    <td> </td>
+    <td> Practice Time</td>
+    <td> Practice Time</td>
+    <td> Practice Time</td>
+    <td> Practice Time </td>
+    <td> Practice Time</td>
+    <td> 2-4pm Practice Time. Prepaid Session. $20 for everyone.</td>
+  </tr>
+ 
+  <tr>
+    <th> 4pm </th>
+    <td> </td>
+    <td> Practice Time</td>
+    <td> Practice Time</td>
+    <td> Practice Time</td>
+    <td> Practice Time </td>
+    <td> Practice Time</td>
+    <td> 2-4pm Practice Time. Prepaid Session. $20 for everyone.</td>
+  </tr>
+  
+   <tr>
+    <th> 5pm </th>
+    <td> Babydoll Lyra (Beginners) with Nikki </td>
+    <td> Pearls Lyra (Intermediate One) with Bronte </td>
+    <td> Sapphires Lyra (Pre-advanced) with Maddie </td>
+    <td> Rubies Lyra (Intermediate Three) with Maddie </td>
+    <td> Vixenettes Lyra (Sexy Lyra) with Wednesday </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  
+   <tr>
+    <th> 6pm </th>
+    <td> Diamonds Lyra (Advanced) with Nikki </td>
+    <td> Babydoll Lyra (Beginners) with Bronte</td>
+    <td> Contemporary Lyra with Maddie </td>
+    <td> Vixens Lyra (Sexy Advanced Lyra) with Maddie </td>
+    <td> Sapphires Lyra (Pre-advanced) with Wednesday </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  
+  <tr>
+    <th> 7pm </th>
+    <td> Pearls Lyra (Intermediate One) with Gigi </td>
+    <td> Pearls Plus Lyra (Intermediate 1-2) with Bolly </td>
+    <td> Rubies Lyra (Intermediate Three) with Lily Rose </td>
+    <td> Sapphires Lyra (Pre-Advanced) with Kitty </td>
+    <td> Emeralds Lyra (Intermediate Two) with Wednesday </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  
+   <tr>
+    <th> 8pm </th>
+    <td> Emeralds Lyra (Intermediate Two) with Gigi </td>
+    <td> Rubies Lyra (Intermediate Three) with Wednesday </td>
+    <td> Babydoll Lyra (Beginners) with Tabitha </td>
+    <td> Diamonds Lyra (Advanced) with Wednesday </td>
+    <td> Babydoll Lyra (Beginners) with Tabitha </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  
+   <tr>
+    <th> 9pm </th>
+    <td> Babydoll Lyra (Beginners) with Gigi </td>
+    <td> Hexed Hoop (Goth Lyra) with Wednesday </td>
+    <td> Pearls Lyra (Intermediate One) with Tabitha </td>
+    <td> Emeralds Lyra (Intermediate Two) with Allegra </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+</tbody></table>
+
+
+
+
+
+
+</div>
+
+<div class="sqs-block-content-flamingo"><p>
+
+
+
+<table>
+  <tbody>
+<tr>
+    <td colspan = "3" class = 'header'><image src='images/Flamingo.png'></image><br>Flamingo Fantasy Timetable: Term 3 <br>26th April '21 - 13th June'21.</td>
+    <td colspan = "5" class = 'header'>When you book into a term at Sky Sirens,  you are booking into the same day and time every week for seven weeks. You must pay a 50% deposit to enrol and the remainder is due by week 2. For every additional class you enrol into,  you will receive $100 off your total (applied per person only). This discount will be applied at the studio upon final payment in week two (please ensure you select the "payment plan" option at checkout, as discounts are not refunded. If you miss a class, your "catch-up" must be within the same term and price tier. You must provide minimum 2 hours notice via email to qualify.  Email within 24 hours of the desired class to book your catch-up.</td>
+  </tr>
+
+    <tr>
+    <th>Time</th>
+    <th>Monday</th>
+    <th>Tuesday</th>
+    <th> Wednesday </th>
+    <th> Thursday </th>
+    <th> Friday </th>
+    <th> Saturday </th>
+    <th> Sunday </th>
+  </tr>
+  <tr>
+    <th>9am</th>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td>  Insta-Sling (Emeralds and Up) with Kitty </td>
+    <td></td>
+  </tr>
+  <tr>
+    <th> 10am </th>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> Vixenettes Sling (Sexy Sling) with Sofia </td>
+    <td> </td>
+  </tr>
+   <tr>
+    <th> 11am </th>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> Emeralds Sling (Intermediate Two) with Kitty </td>
+    <td> </td>
+  </tr>
+   <tr>
+    <th> 12pm </th>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+<td> 12pm - 2pm Practice Time. Prepaid Session 1. $20 for everyone </td>
+    <td> Practice Time</td>
+  </tr>
+
+   <tr>
+    <th> 1pm </th>
+    <td> </td>
+    <td> Practice Time</td>
+    <td> Practice Time</td>
+    <td> Practice Time</td>
+    <td> Practice Time </td>
+    <td> 12pm - 2pm Practice Time. Prepaid Session 1. $20 for everyone </td>
+    <td> </td>
+
+  </tr>
+  
+  <tr>
+    <th> 2pm </th>
+    <td> </td>
+    <td> Practice Time</td>
+    <td> Practice Time</td>
+    <td> Practice Time</td>
+    <td> Practice Time </td>
+    <td> 12pm - 2pm Practice Time. Prepaid Session 1. $20 for everyone </td>
+    <td> 2-4pm Practice Time. Prepaid Session. $20 for everyone.e</td>
+  </tr>
+  
+  <tr>
+    <th> 3pm </th>
+    <td> </td>
+    <td> Practice Time</td>
+    <td> Practice Time</td>
+    <td> Practice Time</td>
+    <td> Practice Time </td>
+    <td> Practice Time</td>
+    <td> 2-4pm Practice Time. Prepaid Session. $20 for everyone.</td>
+  </tr>
+ 
+  <tr>
+    <th> 4pm </th>
+    <td> Room Unavailable</td>
+    <td> Practice Time</td>
+    <td> Practice Time</td>
+    <td> Room Unavailable </td>
+    <td> Practice Time </td>
+    <td> Practice Time</td>
+    <td> 2-4pm Practice Time. Prepaid Session. $20 for everyone.</td>
+  </tr>
+  
+   <tr>
+    <th> 5pm </th>
+    <td> Pearls Sling (Intermediate One) with Maddie </td>
+    <td> Emeralds Sling (Intermediate Two) with Bolly </td>
+    <td> Babydoll Sling (Beginners) with Lily Rose </td>
+    <td> Feather Fantasy (Intermediate Fans) with Allegra </td>
+    <td> Pearls Sling (Intermediate One) with Nikki </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  
+   <tr>
+    <th> 6pm </th>
+    <td> Emeralds Sling (Intermediate Two) with Maddie</td>
+    <td> Feather Fantasia (Advanced Fans) with Lara Love </td>
+    <td> Feather Fantasy (Intermediate Fans) with Porcelain Alice  </td>
+    <td> Rubies Sling (Intermediate Three) with Kitty </td>
+    <td> Bend and Lap (Chair and Strip) with Allegra </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  
+  <tr>
+    <th> 7pm </th>
+    <td> Bolly Sling (Beginners) with Bolly </td>
+    <td> Down and Dirty (Floorwork) with Oryx </td>
+    <td> Feather Fantasia (Advanced Fans) with Porcelain Alice </td>
+    <td> Danceography (Jazz, Funk, Hiphop) with Quench </td>
+    <td> Babydoll Sling (Beginners) with Tabitha </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  
+   <tr>
+    <th> 8pm </th>
+    <td> Sapphires Sling (Pre-advanced) with Nikki </td>
+    <td> Feather Fantasia (Advanced Fans) with Lara Love </td>
+    <td> Pearls Sling (Intermediate One) with Nikki </td>
+    <td> Diamonds Sling (Advanced) with Kitty </td>
+    <td> Rubies Sling (Intermediate Three) with Allegra </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  
+   <tr>
+    <th> 9pm </th>
+    <td> Bend &amp; Lap (Chair &amp; Strip) with Nikki </td>
+    <td> Pearls Sling (Intermediate One) with Bolly </td>
+    <td> Emeralds Sling (Intermediate Two) with Nikki </td>
+    <td> Vixenettes Sling (Sexy Sling) with Wednesday </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+</tbody></table>
+
+
+
+</div>
+
+<div class="sqs-block-content-golden">
+
+
+
+<table>
+  <tbody>
+<tr>
+    <td colspan = "3" class = 'header'><image src='images/Golden.png'></image><br>Golden Glamour Timetable: Term 3 <br>26th April '21 - 13th June'21.</td>
+    <td colspan = "5" class = 'header'>When you book into a term at Sky Sirens,  you are booking into the same day and time every week for seven weeks. You must pay a 50% deposit to enrol and the remainder is due by week 2. For every additional class you enrol into,  you will receive $100 off your total (applied per person only). This discount will be applied at the studio upon final payment in week two (please ensure you select the "payment plan" option at checkout, as discounts are not refunded. If you miss a class, your "catch-up" must be within the same term and price tier. You must provide minimum 2 hours notice via email to qualify.  Email within 24 hours of the desired class to book your catch-up.</td>
+  </tr>
+    <tr>
+    <th>Time</th>
+    <th>Monday</th>
+    <th>Tuesday</th>
+    <th> Wednesday </th>
+    <th> Thursday </th>
+    <th> Friday </th>
+    <th> Saturday </th>
+    <th> Sunday </th>
+  </tr>
+  <tr>
+    <th>9am</th>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td></td>
+  </tr>
+  <tr>
+    <th> 10am </th>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td>Booty Camp (Conditioning) with Baby </td>
+    <td> </td>
+  </tr>
+   <tr>
+    <th> 11am </th>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+   <tr>
+    <th> 12pm </th>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+<td> </td>
+    <td> </td>
+  </tr>
+
+   <tr>
+    <th> 1pm </th>
+    <td></td>
+    <td></td> <td></td> <td></td> <td></td> 
+    <td> </td>
+    <td> </td>
+  </tr>
+  
+  <tr>
+    <th> 2pm </th>
+    <td></td>
+    <td></td> <td></td> <td></td> <td></td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  
+  <tr>
+    <th> 3pm </th>
+    <td></td>
+    <td></td> 
+    <td></td> 
+    <td></td> <td></td>
+    <td> </td>
+    <td> </td>
+  </tr>
+ 
+  <tr>
+    <th> 4pm </th>
+   <td></td>
+    <td></td> <td></td> <td></td> <td></td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  
+   <tr>
+    <th> 5pm </th>
+    <td> Babydoll Fans (Beginners) with Bolly </td>
+    <td> Babydoll Burlesque (Beginners) with Lily Rose </td>
+    <td> Porcelain's Dolls (Choreography) with Porcelain Alice </td>
+    <td> Babydoll Fans (Beginners) with Bolly </td>
+    <td>  </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  
+   <tr>
+    <th> 6pm </th>
+    <td> Babydoll Burlesque (Beginners) with Bolly </td>
+    <td> Booty Camp (Conditioning) with Lily Rose </td>
+    <td> Garnets Burlesque (Intermediate) with Lily Rose </td>
+    <td> Babydoll Fans (Beginners) with Bolly </td>
+    <td> Booty Camp (Conditioning) with Nikki </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  
+  <tr>
+    <th> 7pm </th>
+    <td> Sexy Flexy (Stretch) with Maddie </td>
+    <td> Garnets Burlesque (Intermediate) with Lara Love </td>
+    <td> Handstand Honeys (Beginner Handstands) with Nikki </td>
+    <td> Garnets Burlesque (Intermediate) with Allegra </td>
+    <td> Babydoll Burlesque (Beginners) with Allegra </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  
+   <tr>
+    <th> 8pm </th>
+    <td> Garnets Burlesque (Intermediate) with Lily Rose </td>
+    <td> <a href = "https://www.skysirens.com.au/babydoll-fan-dance" >Babydoll Fans</a> (Beginners) with <a href = "https://www.skysirens.com.au/bolly-golightly">Bolly</a> </td>
+    <td> Sexy Flexy (Stretch) with Maddie </td>
+    <td> Sexy Flexy (Stretch) with Gigi </td>
+    <td> Sexy Flexy (Stretch) with Indy </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  
+   <tr>
+    <th> 9pm </th>
+    <td> Babydoll Burlesque (Beginners) with Lily Rose </td>
+    <td> Sexy Flexy (Stretch) with Lara Love </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+</tbody></table>
+
+
+
+</div>
+
+<script>styleTable()</script>
+</body>
+</html>
