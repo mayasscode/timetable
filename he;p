@@ -1,38 +1,52 @@
-
+<!DOCTYPE html>
 <html>
 
 <head>
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 
-
+<meta name="viewport" content="width=device-width" />
   </head>
   
   <style>
 
+}
 
+}
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
     
-   
+    
 th {
   color: #bf0d0d;
   font-family: baskerville-urw;
   font-weight: 400;
   font-style: italic;
-  line-height: 1.6em;
-  font-size: 1.5vw;
-  font-size: 2vw;
+ 
+  font-size: 3vw;
   text-transform: none;
   text-decoration: none;
   letter-spacing: 0px;
-  table-layout: fixed;
-
+ height: 100%;
+  width: 100%;
+  table-layout: fixed ;
 
 }
 
    
 
 
-
+p21{
+  font-family: 'Great Vibes', cursive;
+font-size:xx-large;
+  color: #bf0d0d;
+  font-weight: lighter;
+  padding:inherit;
+text-shadow: 
+-2px -2px  #FAC9CF,
+		2px -2px #FAC9CF,
+		-2px 2px #FAC9CF,
+		2px 2px #FAC9CF
+}
 
 p22 {
   font-family: 'Great Vibes', cursive;
@@ -61,27 +75,23 @@ text-shadow:
 		-2px 2px #FAC9CF,
 		2px 2px #FAC9CF
 }
-   
-      
 
+      
+    }
 table {
   font-family: baskerville-urw;
   font-weight: 400;
-  font-style: italic;
-  font-size: 1.3em;
-line-height: auto;
+  line-height: 1 vw;
   font-style: normal;
   font-size: 1.5vw;
   text-transform: none;
   text-decoration: none;
   letter-spacing: 0px;
   border-collapse: collapse;
+  table-layout: fixed ;
   height: 100%;
   width: 100%;
-  table-layout: fixed;
     }
-    
- 
     
 
 
@@ -97,56 +107,46 @@ line-height: auto;
 }
 
 .sqs-block-content-leopard{
-  background-image: url(images/leopard.jpg);
-  padding:50px;
   background-image: url(https://static1.squarespace.com/static/55b0bbc6e4b046115ea29bff/t/606fe30e4410b47058dc5954/1617945364211/leopard.jpg);
   padding:30px;
   
 }
 
 .sqs-block-content-dollhouse{
-  background-image: url(images/theDollhouse.jpg);
   background-image: url(https://static1.squarespace.com/static/55b0bbc6e4b046115ea29bff/t/606fe1fe817ad155cf798e2c/1617945098708/theDollhouse.jpg);
   padding:50px;
 }
 
 .sqs-block-content-flamingo{
-  background-image: url(images/flamingoFantasy.jpg);
   background-image: url(https://static1.squarespace.com/static/55b0bbc6e4b046115ea29bff/t/606fe4801e448017e6877500/1617945734083/FLAMINGO-2.jpg);
   padding:50px;
 }
 .sqs-block-content-golden{
-  background-image: url(images/goldenGlamour.jpg);
-  padding:50px;
   background-image: url('https://static1.squarespace.com/static/55b0bbc6e4b046115ea29bff/t/606fe1ebf7427e6477d987c9/1617945075850/SPARKLE-FABRIC.jpg');
   padding: 50px;
 }
 
 td, th {
   border: 1px solid #bf0d0d;
-  padding: 8px;
-  padding: 10px;
+  padding: 2px;
   text-align: center;
   background-color: #fdedee;
-  width: 12.5%;
   table-layout: fixed;
 
 
   
 }
    
-
+th {
+ 
+    }
 td {
   font-size: 1vw;
-  font-size: 1.5vw;
-  width: 12.5%;
-  text-align: centre; 
+  width: 12.5%
     
 }
 
-tr {
-  height: 3vh;
-}
+
 
 .header{
   background-color: #ffffff;
@@ -154,13 +154,6 @@ tr {
   text-align: left;
   font-size: 1.5vw;
 }
-  
-
-.header img{
-  width: 25vw;
-}
- 
-
 
  
   
@@ -169,7 +162,9 @@ tr {
 </style>
   <script>
     function styleTable(){
-@ -84,12 +150,22 @@ for (var i= x.length; i-->0;){
+var x = document.getElementsByTagName('TD');
+for (var i= x.length; i-->0;){
+  console.log(x.innerHTML)
     if (x[i].innerHTML.indexOf('Sky Sirens')!= -1){
         x[i].style.background= '#ffffff';
     }
@@ -181,7 +176,6 @@ tr {
     else if (x[i].innerHTML.indexOf('Insta')!= -1 || x[i].innerHTML.indexOf('gram')!= -1 || x[i].innerHTML.indexOf('Stretch')!= -1 || x[i].innerHTML.indexOf('Conditioning')!= -1 || x[i].innerHTML.indexOf('Handstand')!= -1){
         x[i].style.background= '#fdf3cc';
     }
-    else if (x[i].innerHTML.indexOf('Babydoll Fans')!= -1){
     else if (x[i].innerHTML.indexOf('Babydoll Fan Dance')!= -1){
         x[i].style.background= '#e9f6fc';
     }
@@ -193,7 +187,33 @@ tr {
     else if (x[i].innerHTML.indexOf('Feather Fantasy')!= -1){
         x[i].style.background= '#cfe7f8';
     }
-@ -123,6 +199,46 @@ for (var i= x.length; i-->0;){
+    else if (x[i].innerHTML.indexOf('Feather Fantasia')!= -1){
+        x[i].style.background= '#aad5f1';
+    }
+    else if (x[i].innerHTML.indexOf('Babydoll')!= -1){
+        x[i].style.background= '#e2d7e8';
+    }
+    else if (x[i].innerHTML.indexOf('Pearls')!= -1){
+        x[i].style.background= '#fef5e8';
+    }
+    else if (x[i].innerHTML.indexOf('Emeralds')!= -1){
+        x[i].style.background= '#f3f8f1';
+    }
+    else if (x[i].innerHTML.indexOf('Rubies')!= -1 || x[i].innerHTML.indexOf('Garnets')!= -1){
+        x[i].style.background= '#f6d6db';
+    }
+    else if (x[i].innerHTML.indexOf('Sapphires')!= -1){
+        x[i].style.background= '#cfdbf0';
+    }
+    else if (x[i].innerHTML.indexOf('Diamonds')!= -1){
+        x[i].style.background= '#ecf8fe';
+    }
+    else if (x[i].innerHTML.indexOf('Prepaid')!= -1){
+        x[i].style.background= '#fdedee';
+    }
+    else if (x[i].innerHTML.indexOf('Practice')!= -1){
+        x[i].style.background= '#ecf8fe';
+    }
     else if (x[i].innerHTML.indexOf('with')!= -1){
         x[i].style.background= '#fae9e6';
     }
@@ -240,27 +260,32 @@ tr {
     else {
       x[i].style.background= '#ffffff';
     }
-@ -134,658 +250,159 @@ for (var i= x.length; i-->0;){
+  }
+}
+  </script>
+</head>
+
 <body>
-
-
+  
+</body>
 <div class="sqs-block-content-leopard">
 
 <table>
+
   <tbody>
   <tr>
-    <td colspan = "3" class = 'header'><image src='images/leopardLuxe.png'></image><br>Leopard Luxe Timetable: Term 3 <br>26th April '21 - 13th June'21.</td>
-    <td colspan = "5" class = 'header'>When you book into a term at Sky Sirens,  you are booking into the same day and time every week for seven weeks. You must pay a 50% deposit to enrol and the remainder is due by week 2. For every additional class you enrol into,  you will receive $100 off your total (applied per person only). This discount will be applied at the studio upon final payment in week two (please ensure you select the "payment plan" option at checkout, as discounts are not refunded. If you miss a class, your "catch-up" must be within the same term and price tier. You must provide minimum 2 hours notice via email to qualify.  Email within 24 hours of the desired class to book your catch-up.</td>
+    <td colspan = "3" class = 'header'><br><br><br><p22>Leopard Luxe</p22><center><br></br><b><i>Term 3 Timetable</i></b><br><i>26th April '21 - 13th June'21 </i></center></td>
+    <td colspan = "5" class = 'header'><i>When you book into a term at Sky Sirens,  you are booking into the same day and time every week for seven weeks. You must pay a 50% deposit to enrol and the remainder is due by week 2. For every additional class you enrol into,  you will receive $100 off your total (applied per person only). This discount will be applied at the studio upon final payment in week two (please ensure you select the "payment plan" option at checkout, as discounts are not refunded. If you miss a class, your "catch-up" must be within the same term and price tier. You must provide minimum 2 hours notice via email to qualify.  thin 24 hours of the desired class to book your catch-up.</i></td>
   </tr>
   <tr> 
-    <th>Time</th>
-    <th>Monday</th>
-    <th>Tuesday</th>
-    <th> Wednesday </th>
-    <th> Thursday </th>
-    <th> Friday </th>
-    <th> Saturday </th>
-    <th> Sunday </th> </h2>
+    <th><b>Time</b></th>
+    <th><b> Monday </b></th>
+    <th><b> Tuesday </b></th>
+    <th> <b> Wednesday </b> </th>
+    <th> <b> Thursday </b> </th>
+    <th> <b> Friday </b> </th>
+    <th> <b> Saturday </b> </th>
+    <th> <b> Sunday </b> </th> 
   </tr>
   <tr>
     <th>9am</th>
@@ -269,7 +294,7 @@ tr {
     <td> </td>
     <td> </td>
     <td> </td>
-    <td> Emeralds Pole (Intermediate Two) with Sofia </td>
+    <td> <a class="className" href = "https://www.skysirens.com.au/emeralds-pole" >Emeralds Pole</a> <br>Intermediate Two <br> <a class = "teacherName" href = "https://www.skysirens.com.au/miss-sofia-rose">Sofia</a></td>
     <td></td>
   </tr>
   <tr>
@@ -279,7 +304,7 @@ tr {
     <td> </td>
     <td> </td>
     <td> </td>
-    <td> Pearls Pole (Intermediate One) with Quench</td>
+    <td> <b><i><a  href = "https://www.skysirens.com.au/pearls-pole" style = "color: black;"> Pearls Pole</a></b></i><br>Intermediate One <br> <i><a href ="https://www.skysirens.com.au/quench" style = "color: black">Quench</a></i></td>
     <td> </td>
   </tr>
    <tr>
@@ -289,7 +314,10 @@ tr {
     <td> </td>
     <td> </td>
     <td> </td>
-    <td> Babydoll Pole (Beginners) with Quench</td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/babydoll-pole" style = "color: black;">Babydoll Pole</a> </b></i> 
+      <br>Beginners <br>
+      <i>
+        <a href ="https://www.skysirens.com.au/quench" style = "color: black">Quench</a></i></td>
     <td> </td>
   </tr>
    <tr>
@@ -299,107 +327,97 @@ tr {
     <td> </td>
     <td> </td>
     <td> </td>
-<td> 12pm - 2pm Practice Time. Prepaid Session 1. $20 for everyone </td>
-    <td> Practice Time</td>
+<td rowspan = "2"> <b><i> Practice Time<br>12pm - 2pm</i></b><br> Prepaid Session 1<i> $20 for everyone<br><a href = "https://clients.mindbodyonline.com/classic/ws?sLoc=0&sTG=95&sView=day&studioid=258677&stype=-7" style = "color: black">Pre-Book Online</a></i> </td>
+    <td> </td>
   </tr>
 
    <tr>
     <th> 1pm </th>
     <td> </td>
-    <td> Practice Time</td>
-    <td> Practice Time</td>
-    <td> Practice Time</td>
-    <td> Practice Time </td>
-    <td> 12pm - 2pm Practice Time. Prepaid Session 1. $20 for everyone </td>
+    <td rowspan = "4"> <b><i>Practice Time</i></b><br> <b><i>1pm - 5pm</i></b> <br> <i>$10 cash enrolled <br> $20 cash unenrolled<br> Free for Sex Workers <br>  First in, best dressed</i></td>
+    <td rowspan = "4"> <b><i>Practice Time</i></b><br> <b><i>1pm - 5pm</i></b> <br> <i>$10 cash enrolled <br> $20 cash unenrolled<br> Free for Sex Workers <br>First in, best dressed</i></td>
+    <td rowspan = "4"> <b><i>Practice Time</i></b><br> <b><i>1pm - 5pm</i></b> <br><i>$10 cash enrolled <br> $20 cash unenrolled<br> Free for Sex Workers <br> First in, best dressed</i></td>
+    <td rowspan = "4"> <b><i>Practice Time</i></b><br> <b><i>1pm - 5pm</i></b> <br><i>$10 cash enrolled <br> $20 cash unenrolled<br> Free for Sex Workers <br>  First in, best dressed</i></td>
+    
     <td> </td>
   </tr>
   
   <tr>
     <th> 2pm </th>
-    <td> </td>
-    <td> Practice Time</td>
-    <td> Practice Time</td>
-    <td> Practice Time</td>
-    <td> Practice Time </td>
-    <td> 12pm - 2pm Practice Time. Prepaid Session 1. $20 for everyone </td>
-    <td> 2-4pm Practice Time. Prepaid Session. $20 for everyone.e</td>
+    <td>
+    
+    </td>
+
+    
+    <td rowspan = "2"> <b><i> Practice Time<br>2pm - 4pm</i></b><br> Prepaid Session 2<br> <i> $20 for everyone<br><a href = "https://clients.mindbodyonline.com/classic/ws?sLoc=0&sTG=95&sView=day&studioid=258677&stype=-7" style = "color: black">Pre-Book Online</a></i> </td>
+    <td rowspan = "2"> <b><i> Practice Time<br>2pm - 4pm</i></b><br> Prepaid Session<br> <i> $20 for everyone<br><a href = "https://clients.mindbodyonline.com/classic/ws?sLoc=0&sTG=95&sView=day&studioid=258677&stype=-7" style = "color: black">Pre-Book Online</a></i> </td>
   </tr>
   
   <tr>
     <th> 3pm </th>
     <td> </td>
-    <td> Practice Time</td>
-    <td> Practice Time</td>
-    <td> Practice Time</td>
-    <td> Practice Time </td>
-    <td> Practice Time</td>
-    <td> 2-4pm Practice Time. Prepaid Session. $20 for everyone.</td>
+   
+
   </tr>
  
   <tr>
     <th> 4pm </th>
+    
+  
     <td> </td>
-    <td> Practice Time</td>
-    <td> Practice Time</td>
-    <td> Practice Time</td>
-    <td> Practice Time</td>
-    <td> Practice Time</td>
-    <td> 2-4pm Practice Time. Prepaid Session. $20 for everyone.</td>
+    <td rowspan = "6", colspan="2"> <h1>Reception Hours</h1><i>Mondays 4:30pm - 9pm. <br>
+      Tuesday to Fridays: 1pm to 9pm. <br>
+      Saturdays: 9am to 12pm.</i><br><h1>Practice Time</h1><i>Practice time on weekdays is first in, best dressed - there’s no option to pre-book. Weekend sessions are pre-booked only. Sometimes private lessons or parties may take place during practice time sessions during the week. To avoid disappointment, please check our Facebook page and group for updates. Please ask staff if you need to change the rigging and always use a crash mat. Please don’t teach or assist other people. Practice time is not for learning new moves. Please don’t play the same song on repeat. </i></td>
+
   </tr>
   
    <tr>
     <th> 5pm </th>
-    <td> Emeralds Pole (Intermediate Two) with Rose</td>
-    <td> Rubies Pole (Intermediate Three) with Oryx</td>
-    <td> Pearls Pole (Intermediate One) with Arizona </td>
-    <td> Babydoll Pole (Beginners) with Baby </td>
-    <td> Pearls Pole (Intermediate One) with Sofia </td>
-    <td> </td>
-    <td> </td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/emeralds-pole" style = "color: black;">Emeralds Pole</a></i></b><br> Intermediate Two <br> <i><a href = "https://www.skysirens.com.au/miss-rose-royce" style = "color: black">Rose</a></i></td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/rubies-pole" style = "color: black;">Rubies Pole</a></i></b> <br>Intermediate Three <br> <i><a href= "https://www.skysirens.com.au/miss-oryx" style = "color: black"> Oryx </a></i></td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/pearls-pole" style = "color: black;"> Pearls Pole</a></i></b><br> Intermediate One <br> <i><a href = "https://www.skysirens.com.au/arizona" style = "color: black"">Arizona</a></i> </td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/babydoll-pole" style = "color: black;">Babydoll Pole</a></i></b> <br>Beginners <br> <i>Baby</i></td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/pearls-pole" style = "color: black;"> Pearls Pole</a></i></b><br>Intermediate One <br> <i><a href = "https://www.skysirens.com.au/miss-sofia-rose" style = "color: black">Sofia</a></i></td>
+  
   </tr>
   
    <tr>
     <th> 6pm </th>
-    <td> Babydoll Pole (Beginners) with Rose</td>
-    <td> Contemporary Pole with Oryx</td>
-    <td> Emeralds Pole (Intermediate Two) with Arizona </td>
-    <td> Emeralds Pole (Intermediate Two) with Allegra </td>
-    <td> Sugar Pop Pole (Pop Music Pole) with Sofia </td>
-    <td> </td>
-    <td> </td>
+    <td><b><i><a href = "https://www.skysirens.com.au/babydoll-pole" style = "color: black;">Babydoll Pole</a></i></b> <br>Beginners <br> <i><a href = "https://www.skysirens.com.au/miss-rose-royce" style = "color: black">Rose</a></i></td></td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/contemporary-pole" style = "color: black;">Contemporary Pole</a></i></b><br> <i> <a href= "https://www.skysirens.com.au/miss-oryx" style = "color: black"> Oryx </a></i></td>
+    <td><b><i><a href = "https://www.skysirens.com.au/emeralds-pole" style = "color: black;">Emeralds Pole</a></i></b> <br>Intermediate Two <br> <i><a href = "https://www.skysirens.com.au/arizona" style = "color: black"">Arizona</a></i></td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/emeralds-pole" style = "color: black;">Emeralds Pole</a></i></b> <br>Intermediate Two <br> <i>Allegra</i></td> </td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/sugarpop-pole" style = "color: black;">Sugar Pop Pole</a> </b></i> <br> Pop Music Pole<br> <i><a href = "https://www.skysirens.com.au/miss-sofia-rose" style = "color: black">Sofia</a></i> </td>
+    
   </tr>
   
   <tr>
     <th> 7pm </th>
-    <td> Sapphires Pole (Pre-Advanced) with Arizona </td>
-    <td> Babydoll Pole (Beginners) with Sofia </td>
-    <td> Rubies Pole (Intermediate Three) with Arizona </td>
-    <td> Pearls Pole (Intermediate One) with Gigi </td>
-    <td>  Babydoll Pole (Beginners) wity Indy</td>
-    <td> </td>
-    <td> </td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/sapphires-pole" style = "color: black;">Sapphires Pole</a></i></b> <br> Pre-advanced <br> <i><a href = "https://www.skysirens.com.au/arizona" style = "color: black"">Arizona</a></i>  </td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/babydoll-pole" style = "color: black;">Babydoll Pole</a></i></b><br>Beginners <br> <i><a href = "https://www.skysirens.com.au/miss-sofia-rose" style = "color: black">Sofia</a></i></td> </td>
+    <td><b><i><a href = "https://www.skysirens.com.au/rubies-pole" style = "color: black;">Rubies Pole</a></i></b> <br> Intermediate Three <br> <i><a href = "https://www.skysirens.com.au/arizona" style = "color: black"">Arizona</a></i></td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/pearls-pole" style = "color: black;"> Pearls Pole</a></i></b> <br> Intermediate One <br> <i>Gigi</i> </td>
+    <td>  <b><i><a href = "https://www.skysirens.com.au/babydoll-pole" style = "color: black;">Babydoll Pole</a></i></b> <br> Beginners <br> <i>Indy</i></td></td>
+    
   </tr>
   
    <tr>
     <th> 8pm </th>
-    <td> Vixens Pole (Advanced Sexy Pole) with Arizona </td>
-    <td> Emeralds Pole (Intermediate Two) with Sofia </td>
-    <td> Pearls Pole (Intermediate Two) with Indy </td>
-    <td> Pearls Plus Pole (Intermediate 1-2) with Quench </td>
-    <td> Rubies Pole (Intermediate Three) with Sofia </td>
-    <td> </td>
-    <td> </td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/velvet-vixens" style = "color: black;">Vixens Pole</a></i></b> <br> Adv. Sexy Pole <br> <i> <a href = "https://www.skysirens.com.au/arizona" style = "color: black"">Arizona</a></i></td> </td>
+    <td>  <b><i><a href = "https://www.skysirens.com.au/emeralds-pole" style = "color: black;">Emeralds Pole</a></i></b> <br> Intermediate Two <br> <i><a href = "https://www.skysirens.com.au/miss-sofia-rose" style = "color: black">Sofia</a></i></td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/pearls-pole" style = "color: black;"> Pearls Pole</a></i></b> <br> Intermediate One <br> <i><a href = "https://www.skysirens.com.au/arizona" style = "color: black"">Arizona</a></i> </td> 
+    <td> <b><i><a href = "https://www.skysirens.com.au/pearls-plus-pole" style = "color: black;">Pearls + Pole</a></i></b> <br> Intermediate 1-2 <br> <i><a href ="https://www.skysirens.com.au/quench" style = "color: black">Quench</a></i> </td> 
+    <td> <b><i><a href = "https://www.skysirens.com.au/rubies-pole" style = "color: black;">Rubies Pole</a></i></b> <br> Intermediate Three <br> <i><a href = "https://www.skysirens.com.au/miss-sofia-rose" style = "color: black">Sofia</a></i></td> </td>
+    
   </tr>
   
    <tr>
     <th> 9pm </th>
-    <td> Pearls Pole (Intermediate One) with Arizona </td>
-    <td> Vixenettes Pole (Sexy Pole) with Sofia </td>
-    <td> Babydoll Pole (Beginners) with Indy </td>
-    <td> Rubies Pole (Intermediate Three) with Quench </td>
-    <td> </td>
-    <td> </td>
-    <td> </td>
+    <td><b><i><a href = "https://www.skysirens.com.au/pearls-pole" style = "color: black;"> Pearls Pole</a></i></b> <br> Intermediate 1 <br> <i><a href = "https://www.skysirens.com.au/arizona" style = "color: black"">Arizona</a></i></td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/velvet-vixenettes" style = "color: black;">Vixenettes Pole</a></i></b> <br> Sexy Pole <br> <i> <a href = "https://www.skysirens.com.au/miss-sofia-rose" style = "color: black">Sofia</a></i></td> </td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/babydoll-pole" style = "color: black;">Babydoll Pole</a></i></b> <br> Beginners <br> <i>Indy</i></td> </td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/rubies-pole" style = "color: black;">Rubies Pole</i></b></a> <br> Intermediate 3 <br> <i><a href ="https://www.skysirens.com.au/quench" style = "color: black">Quench</a></i></td>
+   <td></td>
   </tr>
 </tbody></table>
 
@@ -412,19 +430,18 @@ tr {
 <table>
   <tbody>
 <tr>
-    <td colspan = "3" class = 'header'><image src='images/Dollhouse.png'></image><br>The Dollhouse Timetable: Term 3 <br>26th April '21 - 13th June'21.</td>
-    <td colspan = "5" class = 'header'>When you book into a term at Sky Sirens,  you are booking into the same day and time every week for seven weeks. You must pay a 50% deposit to enrol and the remainder is due by week 2. For every additional class you enrol into,  you will receive $100 off your total (applied per person only). This discount will be applied at the studio upon final payment in week two (please ensure you select the "payment plan" option at checkout, as discounts are not refunded. If you miss a class, your "catch-up" must be within the same term and price tier. You must provide minimum 2 hours notice via email to qualify.  Email within 24 hours of the desired class to book your catch-up.</td>
-  </tr>
+  <td colspan = "3" class = 'header'><h2>The Dollhouse</h2><center><b><i>Term 3 Timetable</i></b><br><i>26th April '21 - 13th June'21 </i></center></td>
+  <td colspan = "5" class = 'header'><i> When you book into a term at Sky Sirens,  you are booking into the same day and time every week for seven weeks. You must pay a 50% deposit to enrol and the remainder is due by week 2. For every additional class you enrol into,  you will receive $100 off your total (applied per person only). This discount will be applied at the studio upon final payment in week two (please ensure you select the "payment plan" option at checkout, as discounts are not refunded. If you miss a class, your "catch-up" must be within the same term and price tier. You must provide minimum 2 hours notice via email to qualify.  Email within 24 hours of the desired class to book your catch-up. </i></td>  </tr>
 
     <tr>
-    <th>Time</th>
-    <th>Monday</th>
-    <th>Tuesday</th>
-    <th> Wednesday </th>
-    <th> Thursday </th>
-    <th> Friday </th>
-    <th> Saturday </th>
-    <th> Sunday </th>
+    <th><b>Time</b></th>
+    <th><b> Monday </b></th>
+    <th><b> Tuesday </b></th>
+    <th> <b> Wednesday </b> </th>
+    <th><b> Thursday </b></th>
+    <th> <b> Friday </b> </th>
+    <th> <b> Saturday </b> </th>
+    <th> <b> Sunday </b> </th>
   </tr>
   <tr>
     <th>9am</th>
@@ -433,7 +450,7 @@ tr {
     <td> </td>
     <td> </td>
     <td> </td>
-    <td> Pearls lyra (Intermediate One) with Baby </td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/pearls-lyra" style = "color: black" style = "color: black;">Pearls Lyra</a></i></b> <br>Intermediate One<br> <i>Baby</i> </td>
     <td></td>
   </tr>
   <tr>
@@ -443,7 +460,7 @@ tr {
     <td> </td>
     <td> </td>
     <td> </td>
-    <td> Lyra-gram (Emeralds and Up) with Kitty </td>
+    <td> <b><i><a href="https://www.skysirens.com.au/lyragram" style = "color: black;">Lyra-Gram</a></i></b> <br>Emeralds and Up <br> <i><a href = "https://www.skysirens.com.au/kittyhawk" style = "color: black", style="color: black;">Kitty</a></i></td>
     <td> </td>
   </tr>
    <tr>
@@ -453,9 +470,10 @@ tr {
     <td> </td>
     <td> </td>
     <td> </td>
-    <td> VixenettesLyra (Sexy Lyra) with Baby </td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/velvet-vixenettes-lyra" style = "color: black" style = "color: black;">Vixenettes Lyra</a></i></b> <br> Sexy Lyra <br> <i>Baby</i></td></td>
     <td> </td>
   </tr>
+
    <tr>
     <th> 12pm </th>
     <td> </td>
@@ -463,107 +481,97 @@ tr {
     <td> </td>
     <td> </td>
     <td> </td>
-<td> 12pm - 2pm Practice Time. Prepaid Session 1. $20 for everyone </td>
-    <td> Practice Time</td>
+    <td rowspan = "2"> <b><i> Practice Time<br>12pm - 2pm</i></b><br> Prepaid Session 1<br> <i> $20 for everyone<br>~</br><a href = "https://clients.mindbodyonline.com/classic/ws?sLoc=0&sTG=95&sView=day&studioid=258677&stype=-7" style = "color: black">Pre-Book Online</a></i> </td>
+    <td> </td>
   </tr>
 
    <tr>
     <th> 1pm </th>
     <td></td>
-    <td> Practice Time</td>
-    <td> Practice Time</td>
-    <td> Practice Time</td>
-    <td> Practice Time </td>
-    <td> 12pm - 2pm Practice Time. Prepaid Session 1. $20 for everyone </td>
+    <td rowspan = "4"> <b><i>Practice Time</i></b><br> <b><i>1pm - 5pm</i></b> <br> </br><i>$10 cash enrolled <br> $20 cash unenrolled<br> Free for Sex Workers <br>~</br>  First in, best dressed</i></td>
+    <td rowspan = "4"> <b><i>Practice Time</i></b><br> <b><i>1pm - 5pm</i></b> <br> </br><i>$10 cash enrolled <br> $20 cash unenrolled<br> Free for Sex Workers <br>~</br>  First in, best dressed</i></td>
+    <td rowspan = "4"> <b><i>Practice Time</i></b><br> <b><i>1pm - 5pm</i></b> <br> </br><i>$10 cash enrolled <br> $20 cash unenrolled<br> Free for Sex Workers <br>~</br>  First in, best dressed</i></td>
+    <td rowspan = "4"> <b><i>Practice Time</i></b><br> <b><i>1pm - 5pm</i></b> <br> </br><i>$10 cash enrolled <br> $20 cash unenrolled<br> Free for Sex Workers <br>~</br>  First in, best dressed</i></td>
+
     <td> </td>
   </tr>
   
   <tr>
     <th> 2pm </th>
-    <td> </td>
-    <td> Practice Time</td>
-    <td> Practice Time</td>
-    <td> Practice Time</td>
-    <td> Practice Time </td>
-    <td> 12pm - 2pm Practice Time. Prepaid Session 1. $20 for everyone </td>
-    <td> 2-4pm Practice Time. Prepaid Session. $20 for everyone.e</td>
+    <td></td>
+    <td rowspan = "2"> <b><i> Practice Time<br>2pm - 4pm</i></b><br> Prepaid Session 2<br> <i> $20 for everyone<br>~</br><a href = "https://clients.mindbodyonline.com/classic/ws?sLoc=0&sTG=95&sView=day&studioid=258677&stype=-7" style = "color: black">Pre-Book Online</a></i> </td>
+    <td rowspan = "2"> <b><i> Practice Time<br>2pm - 4pm</i></b><br> Prepaid Session<br> <i> $20 for everyone<br>~</br><a href = "https://clients.mindbodyonline.com/classic/ws?sLoc=0&sTG=95&sView=day&studioid=258677&stype=-7" style = "color: black">Pre-Book Online</a></i> </td>
+
+
+
   </tr>
   
   <tr>
     <th> 3pm </th>
+
     <td> </td>
-    <td> Practice Time</td>
-    <td> Practice Time</td>
-    <td> Practice Time</td>
-    <td> Practice Time </td>
-    <td> Practice Time</td>
-    <td> 2-4pm Practice Time. Prepaid Session. $20 for everyone.</td>
+    
+ 
   </tr>
  
   <tr>
     <th> 4pm </th>
     <td> </td>
-    <td> Practice Time</td>
-    <td> Practice Time</td>
-    <td> Practice Time</td>
-    <td> Practice Time </td>
-    <td> Practice Time</td>
-    <td> 2-4pm Practice Time. Prepaid Session. $20 for everyone.</td>
+    
+    <td rowspan = "6", colspan="2"> <h1>Reception Hours</h1><i>Mondays 4:30pm - 9pm. <br>
+      Tuesday to Fridays: 1pm to 9pm. <br>
+      Saturdays: 9am to 12pm.</i><br></br><h1>Practice Time</h1><i>Practice time on weekdays is first in, best dressed - there’s no option to pre-book. Weekend sessions are pre-booked only. Sometimes private lessons or parties may take place during practice time sessions during the week. To avoid disappointment, please check our Facebook page and group for updates. Please ask staff if you need to change the rigging and always use a crash mat. Please don’t teach or assist other people. Practice time is not for learning new moves. Please don’t play the same song on repeat. </i></td>
+
   </tr>
   
    <tr>
     <th> 5pm </th>
-    <td> Babydoll Lyra (Beginners) with Nikki </td>
-    <td> Pearls Lyra (Intermediate One) with Bronte </td>
-    <td> Sapphires Lyra (Pre-advanced) with Maddie </td>
-    <td> Rubies Lyra (Intermediate Three) with Maddie </td>
-    <td> Vixenettes Lyra (Sexy Lyra) with Wednesday </td>
-    <td> </td>
-    <td> </td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/babydoll-lyra" style = "color: black">Babydoll Lyra</a></b> </i> <br>Beginners <br> <i><a href = "https://www.skysirens.com.au/nikki" style = "color: black">Nikki</a></i> </td>
+    <td>  <b><i><a href = "https://www.skysirens.com.au/pearls-lyra" style = "color: black" style = "color: black;">Pearls Lyra</a></i></b> <br>Intermediate One<br> <i>Bronte</i> </td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/sapphires-lyra" style = "color: black">Sapphires Lyra</a></i></b> <br>Pre-advanced <br> <i><a href = "https://www.skysirens.com.au/miss-maddie" style = "color: black">Maddie</a></i></td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/rubies-lyra" style = "color: black">Rubies Lyra</a></i></b> <br> Intermediate Three <br> <i><a href = "https://www.skysirens.com.au/miss-maddie" style = "color: black">Maddie</a></i></td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/velvet-vixenettes-lyra" style = "color: black" style = "color: black;">Vixenettes Lyra</a></i></b> <br> Sexy Lyra <br> <i><a href = "https://www.skysirens.com.au/wednesday" style = "color: black">Wednesday</a></i></td>
+    
   </tr>
   
    <tr>
     <th> 6pm </th>
-    <td> Diamonds Lyra (Advanced) with Nikki </td>
-    <td> Babydoll Lyra (Beginners) with Bronte</td>
-    <td> Contemporary Lyra with Maddie </td>
-    <td> Vixens Lyra (Sexy Advanced Lyra) with Maddie </td>
-    <td> Sapphires Lyra (Pre-advanced) with Wednesday </td>
-    <td> </td>
-    <td> </td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/diamonds-lyra" style = "color: black">Diamonds Lyra</a></i></b> <br> Advanced <br> <i><a href = "https://www.skysirens.com.au/nikki" style = "color: black">Nikki</a></i></td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/babydoll-lyra" style = "color: black">Babydoll Lyra</a></b> <br></i>Beginners <br> <i>Bronte</i> </td></td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/contemporary-lyra" style = "color: black"> Contemporary Lyra </a></i></b> <br> <i><a href = "https://www.skysirens.com.au/miss-maddie" style = "color: black">Maddie</a></i> </td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/velvet-vixens-lyra" style = "color: black">Vixens Lyra</a></i></b> <br>Sexy Adv. Lyra <br> <i><a href = "https://www.skysirens.com.au/miss-maddie" style = "color: black">Maddie</a></i></td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/sapphires-lyra" style = "color: black">Sapphires Lyra</a></i></b> <br>Pre-advanced <br> <i><a href = "https://www.skysirens.com.au/wednesday" style = "color: black">Wednesday</a></i></td> </td>
+    
   </tr>
   
   <tr>
     <th> 7pm </th>
-    <td> Pearls Lyra (Intermediate One) with Gigi </td>
-    <td> Pearls Plus Lyra (Intermediate 1-2) with Bolly </td>
-    <td> Rubies Lyra (Intermediate Three) with Lily Rose </td>
-    <td> Sapphires Lyra (Pre-Advanced) with Kitty </td>
-    <td> Emeralds Lyra (Intermediate Two) with Wednesday </td>
-    <td> </td>
-    <td> </td>
+    <td>  <b><i><a href = "https://www.skysirens.com.au/pearls-lyra" style = "color: black" style = "color: black;">Pearls Lyra</a></i></b> <br>Intermediate One<br> <i>Gigi</i> </td> </td>
+    <td> <b><i><a href="https://www.skysirens.com.au/pearls-plus-lyra" style = "color: black;">Pearls + Lyra</a></i></b> <br> Intermediate 1-2 <br> <i><a href= "https://www.skysirens.com.au/bolly-golightly" style = "color: black">Bolly</a></i> </td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/rubies-lyra" style = "color: black">Rubies Lyra</a></i></b><br> Intermediate Three <br> <i><a href ="https://www.skysirens.com.au/lily-rose" style = "color: black">Lily Rose</a> </td> 
+    <td> <b><i><a href = "https://www.skysirens.com.au/sapphires-lyra" style = "color: black">Sapphires Lyra</a></i></b> <br>Pre-advanced <br> <i><a href = "https://www.skysirens.com.au/kittyhawk" style = "color: black">Kitty</a></i> </td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/emeralds-lyra" style = "color: black">Emeralds Lyra</a></i></b> <br>Intermediate Two <br> <i><a href = "https://www.skysirens.com.au/wednesday" style = "color: black">Wednesday</a></i>  </td>
+   
   </tr>
   
    <tr>
     <th> 8pm </th>
-    <td> Emeralds Lyra (Intermediate Two) with Gigi </td>
-    <td> Rubies Lyra (Intermediate Three) with Wednesday </td>
-    <td> Babydoll Lyra (Beginners) with Tabitha </td>
-    <td> Diamonds Lyra (Advanced) with Wednesday </td>
-    <td> Babydoll Lyra (Beginners) with Tabitha </td>
-    <td> </td>
-    <td> </td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/emeralds-lyra" style = "color: black">Emeralds Lyra</a></i></b><br> Intermediate Two <br> <i>Gigi</i>  </td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/rubies-lyra" style = "color: black">Rubies Lyra</a></i></b><br> Intermediate Three <br> <i><a href = "https://www.skysirens.com.au/wednesday" style = "color: black">Wednesday</a></i></td> </td>
+    <td>  <b><i><a href = "https://www.skysirens.com.au/babydoll-lyra" style = "color: black">Babydoll Lyra</a></b> </i><br>Beginners <br> <i>Tabitha</i> </td>
+    <td>  <b><i><a href = "https://www.skysirens.com.au/diamonds-lyra" style = "color: black">Diamonds Lyra</a></i></b> <br> Advanced <br> <i><a href = "https://www.skysirens.com.au/wednesday" style = "color: black">Wednesday</a></i></td>
+    <td>  <b><i><a href = "https://www.skysirens.com.au/pearls-lyra" style = "color: black" style = "color: black;">Pearls Lyra</a></i></b> <br>Intermediate One<br> <i>Tabitha</i> </td> </td>
+    
   </tr>
   
    <tr>
     <th> 9pm </th>
-    <td> Babydoll Lyra (Beginners) with Gigi </td>
-    <td> Hexed Hoop (Goth Lyra) with Wednesday </td>
-    <td> Pearls Lyra (Intermediate One) with Tabitha </td>
-    <td> Emeralds Lyra (Intermediate Two) with Allegra </td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/babydoll-lyra" style = "color: black">Babydoll Lyra</a></b> </i><br>Beginners <br> <i>Gigi</i> </td> </td>
+    <td> <b><i><a href ="https://www.skysirens.com.au/hexed-hoop" style = "color: black;">Hexed Hoop</a></i></b> <br>Goth Lyra <br> <i><a href = "https://www.skysirens.com.au/wednesday" style = "color: black">Wednesday</a></i> </td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/pearls-lyra" style = "color: black" style = "color: black;">Pearls Lyra</a></i></b> <br>Intermediate One<br> <i>Tabitha</i> </td> </td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/emeralds-lyra" style = "color: black">Emeralds Lyra</a></i></b> <br>Intermediate Two <br> <i>Allegra</i>  </td>
     <td> </td>
-    <td> </td>
-    <td> </td>
+      
   </tr>
 </tbody></table>
 
@@ -573,27 +581,29 @@ tr {
 
 
 </div>
-
-<div class="sqs-block-content-flamingo"><p>
+      
+      <br>
+      <br>
+      
+      <div class="sqs-block-content-flamingo"><p>
 
 
 
 <table>
   <tbody>
 <tr>
-    <td colspan = "3" class = 'header'><image src='images/Flamingo.png'></image><br>Flamingo Fantasy Timetable: Term 3 <br>26th April '21 - 13th June'21.</td>
-    <td colspan = "5" class = 'header'>When you book into a term at Sky Sirens,  you are booking into the same day and time every week for seven weeks. You must pay a 50% deposit to enrol and the remainder is due by week 2. For every additional class you enrol into,  you will receive $100 off your total (applied per person only). This discount will be applied at the studio upon final payment in week two (please ensure you select the "payment plan" option at checkout, as discounts are not refunded. If you miss a class, your "catch-up" must be within the same term and price tier. You must provide minimum 2 hours notice via email to qualify.  Email within 24 hours of the desired class to book your catch-up.</td>
-  </tr>
+  <td colspan = "3" class = 'header'><h3>Flamingo Fantasy </h3><center><b><i>Term 3 Timetable</i></b><br><i>26th April '21 - 13th June'21 </i></center></td>
+  <td colspan = "5" class = 'header'><i> When you book into a term at Sky Sirens,  you are booking into the same day and time every week for seven weeks. You must pay a 50% deposit to enrol and the remainder is due by week 2. For every additional class you enrol into,  you will receive $100 off your total (applied per person only). This discount will be applied at the studio upon final payment in week two (please ensure you select the "payment plan" option at checkout, as discounts are not refunded. If you miss a class, your "catch-up" must be within the same term and price tier. You must provide minimum 2 hours notice via email to qualify.  Email within 24 hours of the desired class to book your catch-up. </i></td>  </tr>
 
     <tr>
-    <th>Time</th>
-    <th>Monday</th>
-    <th>Tuesday</th>
-    <th> Wednesday </th>
-    <th> Thursday </th>
-    <th> Friday </th>
-    <th> Saturday </th>
-    <th> Sunday </th>
+    <th><b>Time</b></th>
+    <th><b> Monday </b></th>
+    <th><b> Tuesday </b></th>
+    <th> <b> Wednesday </b> </th>
+    <th> <b> Thursday </b> </th>
+    <th> <b> Friday </b> </th>
+    <th> <b> Saturday </b> </th>
+    <th> <b> Sunday </b> </th>
   </tr>
   <tr>
     <th>9am</th>
@@ -602,7 +612,7 @@ tr {
     <td> </td>
     <td> </td>
     <td> </td>
-    <td>  Insta-Sling (Emeralds and Up) with Kitty </td>
+    <td>  <b><i> <a href = "https://www.skysirens.com.au/instasling" style = "color: black"">Insta-Sling</a> </i></b><br>Emeralds and Up <br> <i><a href = "https://www.skysirens.com.au/kittyhawk" style = "color: black">Kitty</a></i>  </td>
     <td></td>
   </tr>
   <tr>
@@ -612,7 +622,7 @@ tr {
     <td> </td>
     <td> </td>
     <td> </td>
-    <td> Vixenettes Sling (Sexy Sling) with Sofia </td>
+    <td> <b><i> <a href = "https://www.skysirens.com.au/velvet-vixenettes-sling"style = "color: black">Vixenettes Sling</a> </i></b> <br> Sexy Sling <br> <i> <a href = "https://www.skysirens.com.au/miss-sofia-rose" style = "color: black">Sofia</a></i> </td>
     <td> </td>
   </tr>
    <tr>
@@ -622,7 +632,7 @@ tr {
     <td> </td>
     <td> </td>
     <td> </td>
-    <td> Emeralds Sling (Intermediate Two) with Kitty </td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/emeralds-sling" style = "color: black">Emeralds Sling</a></i></b><br>Intermediate Two<br> <i><a href = "https://www.skysirens.com.au/kittyhawk" style = "color: black">Kitty</a></i> </td>
     <td> </td>
   </tr>
    <tr>
@@ -631,19 +641,19 @@ tr {
     <td> </td>
     <td> </td>
     <td> </td>
+    <td></td>
+    <td rowspan = "2"> <b><i> Practice Time<br>12pm - 4pm</i></b><br> Prepaid Session 1<br> <i> $20 for everyone<br>~</br><a href = "https://clients.mindbodyonline.com/classic/ws?sLoc=0&sTG=95&sView=day&studioid=258677&stype=-7" style = "color: black">Pre-Book Online</a></i> </td>
     <td> </td>
-<td> 12pm - 2pm Practice Time. Prepaid Session 1. $20 for everyone </td>
-    <td> Practice Time</td>
   </tr>
 
    <tr>
     <th> 1pm </th>
     <td> </td>
-    <td> Practice Time</td>
-    <td> Practice Time</td>
-    <td> Practice Time</td>
-    <td> Practice Time </td>
-    <td> 12pm - 2pm Practice Time. Prepaid Session 1. $20 for everyone </td>
+    <td rowspan = "4"> <b><i>Practice Time</i></b><br> <b><i>1pm - 5pm</i></b> <br> </br><i>$10 cash enrolled <br> $20 cash unenrolled<br> Free for Sex Workers <br>~</br>  First in, best dressed</i></td>
+    <td rowspan = "4"> <b><i>Practice Time</i></b><br> <b><i>1pm - 5pm</i></b> <br> </br><i>$10 cash enrolled <br> $20 cash unenrolled<br> Free for Sex Workers <br>~</br>  First in, best dressed</i></td>
+    <td rowspan = "3"> <b><i>Practice Time</i></b><br> <b><i>1pm - 4pm</i></b> <br> </br><i>$10 cash enrolled <br> $20 cash unenrolled<br> Free for Sex Workers <br>~</br>  First in, best dressed</i></td>
+    <td rowspan = "4"> <b><i>Practice Time</i></b><br> <b><i>1pm - 5pm</i></b> <br> </br><i>$10 cash enrolled <br> $20 cash unenrolled<br> Free for Sex Workers <br>~</br>  First in, best dressed</i></td>
+   
     <td> </td>
 
   </tr>
@@ -651,95 +661,84 @@ tr {
   <tr>
     <th> 2pm </th>
     <td> </td>
-    <td> Practice Time</td>
-    <td> Practice Time</td>
-    <td> Practice Time</td>
-    <td> Practice Time </td>
-    <td> 12pm - 2pm Practice Time. Prepaid Session 1. $20 for everyone </td>
-    <td> 2-4pm Practice Time. Prepaid Session. $20 for everyone.e</td>
+    <td rowspan = "2"> <b><i> Practice Time<br>2pm - 4pm</i></b><br> Prepaid Session 2<br> <i> $20 for everyone<br>~</br><a href = "https://clients.mindbodyonline.com/classic/ws?sLoc=0&sTG=95&sView=day&studioid=258677&stype=-7" style = "color: black">Pre-Book Online</a></i> </td>
+    <td rowspan = "2"> <b><i> Practice Time<br>2pm - 4pm</i></b><br> Prepaid Session<br> <i> $20 for everyone<br>~</br><a href = "https://clients.mindbodyonline.com/classic/ws?sLoc=0&sTG=95&sView=day&studioid=258677&stype=-7" style = "color: black">Pre-Book Online</a></i> </td>
   </tr>
   
   <tr>
     <th> 3pm </th>
     <td> </td>
-    <td> Practice Time</td>
-    <td> Practice Time</td>
-    <td> Practice Time</td>
-    <td> Practice Time </td>
-    <td> Practice Time</td>
-    <td> 2-4pm Practice Time. Prepaid Session. $20 for everyone.</td>
+
+
   </tr>
  
   <tr>
     <th> 4pm </th>
     <td> Room Unavailable</td>
-    <td> Practice Time</td>
-    <td> Practice Time</td>
+    
     <td> Room Unavailable </td>
-    <td> Practice Time </td>
-    <td> Practice Time</td>
-    <td> 2-4pm Practice Time. Prepaid Session. $20 for everyone.</td>
+    
+    <td rowspan = "6", colspan="2"> <h1>Reception Hours</h1><i>Mondays 4:30pm - 9pm. <br>
+      Tuesday to Fridays: 1pm to 9pm. <br>
+      Saturdays: 9am to 12pm.</i><br></br><h1>Practice Time</h1><i>Practice time on weekdays is first in, best dressed - there’s no option to pre-book. Weekend sessions are pre-booked only. Sometimes private lessons or parties may take place during practice time sessions during the week. To avoid disappointment, please check our Facebook page and group for updates. Please ask staff if you need to change the rigging and always use a crash mat. Please don’t teach or assist other people. Practice time is not for learning new moves. Please don’t play the same song on repeat. </i></td>
+
   </tr>
   
    <tr>
     <th> 5pm </th>
-    <td> Pearls Sling (Intermediate One) with Maddie </td>
-    <td> Emeralds Sling (Intermediate Two) with Bolly </td>
-    <td> Babydoll Sling (Beginners) with Lily Rose </td>
-    <td> Feather Fantasy (Intermediate Fans) with Allegra </td>
-    <td> Pearls Sling (Intermediate One) with Nikki </td>
-    <td> </td>
-    <td> </td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/pearls-sling" style = "color: black">Pearls Sling</a></i></b><br>Intermediate One <br> <i><a href = "https://www.skysirens.com.au/miss-maddie" style = "color: black">Maddie</a></i></td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/emeralds-sling" style = "color: black">Emeralds Sling</a></i></b><br>Intermediate Two<br> <i><a href= "https://www.skysirens.com.au/bolly-golightly" style = "color: black">Bolly</a></i> </td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/babydoll-sling" style = "color: black">Babydoll Sling</a></i></b> <br> Beginners <br> <i> <a href ="https://www.skysirens.com.au/lily-rose" style = "color: black">Lily Rose</a> </i></td>
+    <td> <b><i>  <a href = "https://www.skysirens.com.au/booty-camp" style = "color: black">Booty Camp</a> </i></b> <br>Conditioning <br> <i>Allegra</i>  </td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/pearls-sling" style = "color: black">Pearls Sling</a></i></b><br>Intermediate One <br> <i><a href = "https://www.skysirens.com.au/nikki" style = "color: black">Nikki</a></i></td>
+   
   </tr>
   
    <tr>
     <th> 6pm </th>
-    <td> Emeralds Sling (Intermediate Two) with Maddie</td>
-    <td> Feather Fantasia (Advanced Fans) with Lara Love </td>
-    <td> Feather Fantasy (Intermediate Fans) with Porcelain Alice  </td>
-    <td> Rubies Sling (Intermediate Three) with Kitty </td>
-    <td> Bend and Lap (Chair and Strip) with Allegra </td>
-    <td> </td>
-    <td> </td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/emeralds-sling" style = "color: black">Emeralds Sling</a></i></b><br>Intermediate Two<br> <i><a href = "https://www.skysirens.com.au/miss-maddie" style = "color: black">Maddie</a></i> </td>
+    <td> <b><i> <a href ="https://www.skysirens.com.au/feather-fantasia" style = "color: black"> Feather Fantasia</a></i></b> <br> Adv. Fans <br> <i><a href ="https://www.skysirens.com.au/lara-love" style = "color: black"></a>Lara Love</a></i></td>
+    <td> <b><i> <a href ="https://www.skysirens.com.au/feather-fantasy" style = "color: black"> Feather Fantasy</a></i></b> <br> Intermediate Fans<br> <i><a href = "https://www.skysirens.com.au/miss-porcelain-alice" style = "color: black">Porcelain Alice</a></i></td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/rubies-sling" style = "color: black">Rubies Sling</a></i></b><br> Intermediate Three <br> <i><a href = "https://www.skysirens.com.au/kittyhawk" style = "color: black">Kitty</a></i></td>
+    <td> <b><i>  <a href = "https://www.skysirens.com.au/bend-and-lap" style = "color: black">Bend & Lap</a> </i></b><br>Chair and Strip<br> <i> Allegra</i> </td>
+    
   </tr>
   
   <tr>
     <th> 7pm </th>
-    <td> Bolly Sling (Beginners) with Bolly </td>
-    <td> Down and Dirty (Floorwork) with Oryx </td>
-    <td> Feather Fantasia (Advanced Fans) with Porcelain Alice </td>
-    <td> Danceography (Jazz, Funk, Hiphop) with Quench </td>
-    <td> Babydoll Sling (Beginners) with Tabitha </td>
-    <td> </td>
-    <td> </td>
+    <td> <b><i>  <a href = "https://www.skysirens.com.au/bolly-sling" style = "color: black;" >Bolly Sling</a> </i></b> <br> Bollywood x Sling <br> <i><a href= "https://www.skysirens.com.au/bolly-golightly" style = "color: black">Bolly</a></i> </td>
+    <td> <b><i> <a href = "https://www.skysirens.com.au/down-and-dirty" style = "color: black">Down & Dirty</a> </i></b> <br> Floorwork<br> <i> <a href= "https://www.skysirens.com.au/miss-oryx" style = "color: black"> Oryx </a></i></td>
+    <td> <b><i> <a href ="https://www.skysirens.com.au/feather-fantasia" style = "color: black"> Feather Fantasia</a></i></b> <br> Adv. Fans <br> <i><a href = "https://www.skysirens.com.au/miss-porcelain-alice" style = "color: black">Porcelain Alice</a></i></td>
+    <td><b><i>  <a href = "https://www.skysirens.com.au/danceography" style = "color: black;">Danceography</a> </i></b> <br> Jazz, Funk, Hiphop <br> <i><a href ="https://www.skysirens.com.au/quench" style = "color: black">Quench</a></i></td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/babydoll-sling" style = "color: black">Babydoll Sling</a></i></b> <br> Beginners <br> <i>Tabitha</i></td>
+  
   </tr>
   
    <tr>
     <th> 8pm </th>
-    <td> Sapphires Sling (Pre-advanced) with Nikki </td>
-    <td> Feather Fantasia (Advanced Fans) with Lara Love </td>
-    <td> Pearls Sling (Intermediate One) with Nikki </td>
-    <td> Diamonds Sling (Advanced) with Kitty </td>
-    <td> Rubies Sling (Intermediate Three) with Allegra </td>
-    <td> </td>
-    <td> </td>
+    <td> <b><i> <a href = "https://www.skysirens.com.au/sapphires-sling" style = "color: black">Sapphires Sling</a> </i></b><br>Pre-advanced <br> <i><a href = "https://www.skysirens.com.au/nikki" style = "color: black">Nikki</a></i></td>
+    <td> <b><i> <a href ="https://www.skysirens.com.au/feather-fantasia" style = "color: black"> Feather Fantasia</a></i></b> <br> Adv. Fans <br> <i><a href ="https://www.skysirens.com.au/lara-love" style = "color: black">Lara Love</a></i></td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/pearls-sling" style = "color: black">Pearls Sling</a></i></b><br>Intermediate One <br> <i><a href = "https://www.skysirens.com.au/nikki" style = "color: black">Nikki</a></i></td>
+    <td><b><i> <a href = "https://www.skysirens.com.au/diamonds-sling" style = "color: black">Diamonds Sling</a> </i></b><br>Advanced <br> <i><a href = "https://www.skysirens.com.au/kittyhawk" style = "color: black">Kitty</a></i></td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/rubies-sling" style = "color: black">Rubies Sling</a></i></b><br> Intermediate Three <br> <i>Allegra</i></td>
+   
   </tr>
   
    <tr>
     <th> 9pm </th>
-    <td> Bend &amp; Lap (Chair &amp; Strip) with Nikki </td>
-    <td> Pearls Sling (Intermediate One) with Bolly </td>
-    <td> Emeralds Sling (Intermediate Two) with Nikki </td>
-    <td> Vixenettes Sling (Sexy Sling) with Wednesday </td>
+    <td> <b><i>  <a href = "https://www.skysirens.com.au/bend-and-lap" style = "color: black">Bend & Lap</a> </i></b><br>Chair and Strip<br> <i> <a href = "https://www.skysirens.com.au/nikki" style = "color: black">Nikki</a></i> </td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/pearls-sling" style = "color: black">Pearls Sling</a></i></b><br>Intermediate One <br> <i> <a href= "https://www.skysirens.com.au/bolly-golightly" style = "color: black">Bolly</a></i></td>
+    <td> <b><i><a href = "https://www.skysirens.com.au/emeralds-sling" style = "color: black">Emeralds Sling</a></i></b><br>Intermediate Two<br> <i><a href = "https://www.skysirens.com.au/nikki" style = "color: black">Nikki</a></i> </td>
+    <td> <b><i> <a href = "https://www.skysirens.com.au/velvet-vixenettes-sling"style = "color: black">Vixenettes Sling</a> </i></b> <br> Sexy Sling <br> <i> <a href = "https://www.skysirens.com.au/wednesday" style = "color: black">Wednesday</a></i> </td>
     <td> </td>
-    <td> </td>
-    <td> </td>
+    
   </tr>
 </tbody></table>
 
 
 
 </div>
+
 
 <div class="sqs-block-content-golden">
 
@@ -748,18 +747,18 @@ tr {
 <table>
   <tbody>
 <tr>
-    <td colspan = "3" class = 'header'><image src='images/Golden.png'></image><br>Golden Glamour Timetable: Term 3 <br>26th April '21 - 13th June'21.</td>
-    <td colspan = "5" class = 'header'>When you book into a term at Sky Sirens,  you are booking into the same day and time every week for seven weeks. You must pay a 50% deposit to enrol and the remainder is due by week 2. For every additional class you enrol into,  you will receive $100 off your total (applied per person only). This discount will be applied at the studio upon final payment in week two (please ensure you select the "payment plan" option at checkout, as discounts are not refunded. If you miss a class, your "catch-up" must be within the same term and price tier. You must provide minimum 2 hours notice via email to qualify.  Email within 24 hours of the desired class to book your catch-up.</td>
+  <td colspan = "3" class = 'header'><h2>Golden Glamour </h2><center><b><i>Term 3 Timetable</i></b><br><i>26th April '21 - 13th June'21 </i></center></td>
+  <td colspan = "5" class = 'header'><i> When you book into a term at Sky Sirens,  you are booking into the same day and time every week for seven weeks. You must pay a 50% deposit to enrol and the remainder is due by week 2. For every additional class you enrol into,  you will receive $100 off your total (applied per person only). This discount will be applied at the studio upon final payment in week two (please ensure you select the "payment plan" option at checkout, as discounts are not refunded. If you miss a class, your "catch-up" must be within the same term and price tier. You must provide minimum 2 hours notice via email to qualify.  Email within 24 hours of the desired class to book your catch-up. </i></td>  </tr>
   </tr>
     <tr>
-    <th>Time</th>
-    <th>Monday</th>
-    <th>Tuesday</th>
-    <th> Wednesday </th>
-    <th> Thursday </th>
-    <th> Friday </th>
-    <th> Saturday </th>
-    <th> Sunday </th>
+    <th><b>Time</b></th>
+    <th><b> Monday </b></th>
+    <th><b> Tuesday </b></th>
+    <th> <b> Wednesday </b> </th>
+    <th> <b> Thursday </b> </th>
+    <th> <b> Friday </b> </th>
+    <th> <b> Saturday </b> </th>
+    <th> <b> Sunday </b> </th>
   </tr>
   <tr>
     <th>9am</th>
@@ -778,7 +777,7 @@ tr {
     <td> </td>
     <td> </td>
     <td> </td>
-    <td>Booty Camp (Conditioning) with Baby </td>
+    <td><b><i>  <a href = "https://www.skysirens.com.au/booty-camp" style = "color: black">Booty Camp</a> </i></b> <br>Conditioning <br> <i>Baby</i>  </td>
     <td> </td>
   </tr>
    <tr>
@@ -832,63 +831,60 @@ tr {
     <th> 4pm </th>
    <td></td>
     <td></td> <td></td> <td></td> <td></td>
-    <td> </td>
-    <td> </td>
+    <td rowspan = "6", colspan="2"> <h1>Reception Hours</h1><i>Mondays 4:30pm - 9pm. <br>
+      Tuesday to Fridays: 1pm to 9pm. <br>
+      Saturdays: 9am to 12pm.</i><br></br><h1>Practice Time</h1><i>Practice time in Golden Glamour is subject to availability as we use this room for Instructor Training. If no instructors wish to use this space, you are welcome to practice in there while the other rooms are open. This is subject to 'walk-ins' only. If you would like to book the room privately for your own or group training (there is also a rigging point in there for a low - mid-height lyra or sling) please contact reception.</i></td>
+
   </tr>
   
    <tr>
     <th> 5pm </th>
-    <td> Babydoll Fans (Beginners) with Bolly </td>
-    <td> Babydoll Burlesque (Beginners) with Lily Rose </td>
-    <td> Porcelain's Dolls (Choreography) with Porcelain Alice </td>
-    <td> Babydoll Burlesque (Beginners) with Bolly </td>
+    <td> <b><i><a href ="https://www.skysirens.com.au/babydoll-fan-dance" style = "color: black">Babydoll Fan Dance</a> </i></b> <br> Beginners <br> <i>  <a href= "https://www.skysirens.com.au/bolly-golightly" style = "color: black">Bolly</a></i> </td>
+    <td> <b><i> <a href ="https://www.skysirens.com.au/babydoll-burlesque" style = "color: black"> Babydoll Burlesque </a></i></b><br> Beginners<br> <i> <a href ="https://www.skysirens.com.au/lily-rose" style = "color: black">Lily Rose</a> </td>
+    <td> <b><i> <a href ="https://www.skysirens.com.au/porcelains-dolls" style = "color: black"> Porcelain's Dolls </a></i></b><br> Choreography <br> <i> <a href = "https://www.skysirens.com.au/miss-porcelain-alice" style = "color: black">Porcelain Alice</a></i></td>
+    <td> <b><i><a href ="https://www.skysirens.com.au/babydoll-fan-dance" style = "color: black">Babydoll Fan Dance</a> </i></b> <br> Beginners <br> <i> <a href= "https://www.skysirens.com.au/bolly-golightly" style = "color: black">Bolly</a></i> </td>
     <td>  </td>
-    <td> </td>
-    <td> </td>
+  
   </tr>
   
    <tr>
     <th> 6pm </th>
-    <td> Babydoll Burlesque (Beginners) with Bolly </td>
-    <td> Booty Camp (Conditioning) with Lily Rose </td>
-    <td> Garnets Burlesque (Intermediate) with Lily Rose </td>
-    <td> Babydoll Fans (Beginners) with Bolly </td>
-    <td> Booty Camp (Conditioning) with Nikki </td>
-    <td> </td>
-    <td> </td>
+    <td> <b><i> <a href ="https://www.skysirens.com.au/babydoll-burlesque" style = "color: black"> Babydoll Burlesque </a></i></b><br> Beginners<br> <i> <a href= "https://www.skysirens.com.au/bolly-golightly" style = "color: black">Bolly</a></i> </td>
+    <td> <b><i>  <a href = "https://www.skysirens.com.au/booty-camp" style = "color: black">Booty Camp</a> </i></b> <br>Conditioning <br> <i><a href ="https://www.skysirens.com.au/lily-rose" style = "color: black">Lily Rose</a>   </td>
+    <td> <b><i> <a href ="https://www.skysirens.com.au/garnets-burlesque" style = "color: black"> Garnets Burlesque </a></i></b> <br> Intermediate <br> <i><a href ="https://www.skysirens.com.au/lily-rose" style = "color: black">Lily Rose</a>   </td>
+    <td> <b><i><a href ="https://www.skysirens.com.au/babydoll-fan-dance" style = "color: black">Babydoll Fan Dance</a> </i></b> <br> Beginners <br> <i> <a href= "https://www.skysirens.com.au/bolly-golightly" style = "color: black">Bolly</a></i> </td>
+    <td> <b><i>  <a href = "https://www.skysirens.com.au/booty-camp" style = "color: black">Booty Camp</a> </i></b> <br>Conditioning <br> <i><a href = "https://www.skysirens.com.au/nikki" style = "color: black">Nikki</a></i>  </td>
+   
   </tr>
   
   <tr>
     <th> 7pm </th>
-    <td> Sexy Flexy (Stretch) with Maddie </td>
-    <td> Garnets Burlesque (Intermediate) with Lara Love </td>
-    <td> Handstand Honeys (Beginner Handstands) with Nikki </td>
-    <td> Garnets Burlesque (Intermediate) with Allegra </td>
-    <td> Babydoll Burlesque (Beginners) with Allegra </td>
-    <td> </td>
-    <td> </td>
+    <td> <b><i>  <a href = "https://www.skysirens.com.au/sexy-flexy" style = "color: black">Sexy Flexy</a> </i></b> <br> Stretch <br> <i><a href = "https://www.skysirens.com.au/miss-maddie" style = "color: black">Maddie</a></i> </td>
+    <td> <b><i> <a href ="https://www.skysirens.com.au/garnets-burlesque" style = "color: black"> Garnets Burlesque </a></i></b> <br> Intermediate <br> <i><a href ="https://www.skysirens.com.au/lara-love" style = "color: black">Lara Love</a></i>  </td>
+    <td> <b><i>   <a href = "https://www.skysirens.com.au/handstand-honeys" style = "color: black">Handstand Honeys</a> </i></b><br> Beginner Handstands<br> <i> <a href = "https://www.skysirens.com.au/nikki" style = "color: black">Nikki</a></i></td>
+    <td> <b><i> <a href ="https://www.skysirens.com.au/garnets-burlesque" style = "color: black"> Garnets Burlesque </a></i></b> <br> Intermediate <br> <i>Allegra</i>  </td> 
+    <td> <b><i> <a href ="https://www.skysirens.com.au/babydoll-burlesque" style = "color: black"> Babydoll Burlesque </a></i></b><br> Beginners<br> <i> Allegra</i> </td>
+   
   </tr>
   
    <tr>
     <th> 8pm </th>
-    <td> Garnets Burlesque (Intermediate) with Lily Rose </td>
-    <td> Babydoll Burlesque (Beginners) with Bolly </td>
-    <td> Sexy Flexy (Stretch) with Maddie </td>
-    <td> Sexy Flexy (Stretch) with Gigi </td>
-    <td> Sexy Flexy (Stretch) with Indy </td>
-    <td> </td>
-    <td> </td>
+    <td> <b><i> <a href ="https://www.skysirens.com.au/garnets-burlesque" style = "color: black"> Garnets Burlesque </a></i></b> <br> Intermediate <br> <i><a href ="https://www.skysirens.com.au/lily-rose" style = "color: black">Lily Rose</a>  </td>
+    <td> <b><i><a href ="https://www.skysirens.com.au/babydoll-fan-dance" style = "color: black">Babydoll Fan Dance</a> </i></b> <br> Beginners <br> <i> <a href= "https://www.skysirens.com.au/bolly-golightly" style = "color: black">Bolly</a></i> </td>
+    <td> <b><i>  <a href = "https://www.skysirens.com.au/sexy-flexy" style = "color: black">Sexy Flexy</a> </i></b> <br> Stretch <br> <i><a href = "https://www.skysirens.com.au/miss-maddie" style = "color: black">Maddie</a></i> </td>
+    <td> <b><i>  <a href = "https://www.skysirens.com.au/sexy-flexy" style = "color: black">Sexy Flexy</a> </i></b> <br> Stretch <br> <i>Gigi</i> </td>
+    <td> <b><i>  <a href = "https://www.skysirens.com.au/sexy-flexy" style = "color: black">Sexy Flexy</a> </i></b> <br> Stretch <br> <i>Indy</i> </td>
+  
   </tr>
   
    <tr>
     <th> 9pm </th>
-    <td> Babydoll Burlesque (Beginners) with Lily Rose </td>
-    <td> Sexy Flexy (Stretch) with Lara Love </td>
+    <td> <b><i> <a href ="https://www.skysirens.com.au/babydoll-burlesque" style = "color: black"> Babydoll Burlesque </a></i></b><br> Beginners<br> <i> <a href ="https://www.skysirens.com.au/lily-rose" style = "color: black">Lily Rose</a>  </td>
+    <td> <b><i>  <a href = "https://www.skysirens.com.au/sexy-flexy" style = "color: black">Sexy Flexy</a> </i></b> <br> Stretch <br> <i><a href ="https://www.skysirens.com.au/lara-love" style = "color: black">Lara Love</a></i> </td>
     <td> </td>
     <td> </td>
     <td> </td>
-    <td> </td>
-    <td> </td>
+   
   </tr>
 </tbody></table>
 
@@ -899,158 +895,6 @@ tr {
 <script>styleTable()</script>
 </body>
 </html>
-  <div class="sqs-block-content-leopard">
 
-    <table class = "myTable">
-    
-      <tbody>
-      <tr>
-        <td colspan = "3" class = 'header'><br><br><br><p22>Leopard Luxe</p22><center><br></br><b><i>Term 3 Timetable</i></b><br><i>26th April '21 - 13th June'21 </i></center></td>
-        <td colspan = "5" class = 'header'><i>When you book into a term at Sky Sirens,  you are booking into the same day and time every week for seven weeks. You must pay a 50% deposit to enrol and the remainder is due by week 2. For every additional class you enrol into,  you will receive $100 off your total (applied per person only). This discount will be applied at the studio upon final payment in week two (please ensure you select the "payment plan" option at checkout, as discounts are not refunded. If you miss a class, your "catch-up" must be within the same term and price tier. You must provide minimum 2 hours notice via email to qualify.  thin 24 hours of the desired class to book your catch-up.</i></td>
-      </tr>
-      <tr> 
-        <th><b>Time</b></th>
-        <th><b> Monday </b></th>
-        <th><b> Tuesday </b></th>
-        <th> <b> Wednesday </b> </th>
-        <th> <b> Thursday </b> </th>
-        <th> <b> Friday </b> </th>
-        <th> <b> Saturday </b> </th>
-        <th> <b> Sunday </b> </th> 
-      </tr>
-      <tr>
-        <th class = "first">9am</th>
-        <td> </td>
-        <td> </td>
-        <td> </td>
-        <td> </td>
-        <td> </td>
-        <td> <a class="className" href = "https://www.skysirens.com.au/emeralds-pole" >Emeralds Pole</a> <br>Intermediate Two <br> <a class = "teacherName" href = "https://www.skysirens.com.au/miss-sofia-rose">Sofia</a></td>
-        <td></td>
-      </tr>
-      <tr class = "first">
-        <th> 10am </th>
-        <td> </td>
-        <td> </td>
-        <td> </td>
-        <td> </td>
-        <td> </td>
-        <td> <b><i><a  href = "https://www.skysirens.com.au/pearls-pole" style = "color: black;"> Pearls Pole</a></b></i><br>Intermediate One <br> <i><a href ="https://www.skysirens.com.au/quench" style = "color: black">Quench</a></i></td>
-        <td> </td>
-      </tr>
-       <tr>
-        <th> 11am </th>
-        <td> </td>
-        <td> </td>
-        <td> </td>
-        <td> </td>
-        <td> </td>
-        <td> <b><i><a href = "https://www.skysirens.com.au/babydoll-pole" style = "color: black;">Babydoll Pole</a> </b></i> 
-          <br>Beginners <br>
-          <i>
-            <a href ="https://www.skysirens.com.au/quench" style = "color: black">Quench</a></i></td>
-        <td> </td>
-      </tr>
-       <tr>
-        <th> 12pm </th>
-        <td> </td>
-        <td> </td>
-        <td> </td>
-        <td> </td>
-        <td> </td>
-    <td rowspan = "2"> <b><i> Practice Time<br>12pm - 2pm</i></b><br> Prepaid Session 1<i> $20 for everyone<br><a href = "https://clients.mindbodyonline.com/classic/ws?sLoc=0&sTG=95&sView=day&studioid=258677&stype=-7" style = "color: black">Pre-Book Online</a></i> </td>
-        <td> </td>
-      </tr>
-    
-       <tr>
-        <th> 1pm </th>
-        <td> </td>
-        <td rowspan = "4"> <b><i>Practice Time</i></b><br> <b><i>1pm - 5pm</i></b> <br> <i>$10 cash enrolled <br> $20 cash unenrolled<br> Free for Sex Workers <br>  First in, best dressed</i></td>
-        <td rowspan = "4"> <b><i>Practice Time</i></b><br> <b><i>1pm - 5pm</i></b> <br> <i>$10 cash enrolled <br> $20 cash unenrolled<br> Free for Sex Workers <br>First in, best dressed</i></td>
-        <td rowspan = "4"> <b><i>Practice Time</i></b><br> <b><i>1pm - 5pm</i></b> <br><i>$10 cash enrolled <br> $20 cash unenrolled<br> Free for Sex Workers <br> First in, best dressed</i></td>
-        <td rowspan = "4"> <b><i>Practice Time</i></b><br> <b><i>1pm - 5pm</i></b> <br><i>$10 cash enrolled <br> $20 cash unenrolled<br> Free for Sex Workers <br>  First in, best dressed</i></td>
-        
-        <td> </td>
-      </tr>
-      
-      <tr>
-        <th> 2pm </th>
-        <td>
-        
-        </td>
-    
-        
-        <td rowspan = "2"> <b><i> Practice Time<br>2pm - 4pm</i></b><br> Prepaid Session 2<br> <i> $20 for everyone<br><a href = "https://clients.mindbodyonline.com/classic/ws?sLoc=0&sTG=95&sView=day&studioid=258677&stype=-7" style = "color: black">Pre-Book Online</a></i> </td>
-        <td rowspan = "2"> <b><i> Practice Time<br>2pm - 4pm</i></b><br> Prepaid Session<br> <i> $20 for everyone<br><a href = "https://clients.mindbodyonline.com/classic/ws?sLoc=0&sTG=95&sView=day&studioid=258677&stype=-7" style = "color: black">Pre-Book Online</a></i> </td>
-      </tr>
-      
-      <tr>
-        <th> 3pm </th>
-        <td> </td>
-       
-    
-      </tr>
-     
-      <tr>
-        <th> 4pm </th>
-        
-      
-        <td> </td>
-        <td rowspan = "6", colspan="2"> <h1>Reception Hours</h1><i>Mondays 4:30pm - 9pm. <br>
-          Tuesday to Fridays: 1pm to 9pm. <br>
-          Saturdays: 9am to 12pm.</i><br><h1>Practice Time</h1><i>Practice time on weekdays is first in, best dressed - there’s no option to pre-book. Weekend sessions are pre-booked only. Sometimes private lessons or parties may take place during practice time sessions during the week. To avoid disappointment, please check our Facebook page and group for updates. Please ask staff if you need to change the rigging and always use a crash mat. Please don’t teach or assist other people. Practice time is not for learning new moves. Please don’t play the same song on repeat. </i></td>
-    
-      </tr>
-      
-       <tr>
-        <th> 5pm </th>
-        <td> <b><i><a href = "https://www.skysirens.com.au/emeralds-pole" style = "color: black;">Emeralds Pole</a></i></b><br> Intermediate Two <br> <i><a href = "https://www.skysirens.com.au/miss-rose-royce" style = "color: black">Rose</a></i></td>
-        <td> <b><i><a href = "https://www.skysirens.com.au/rubies-pole" style = "color: black;">Rubies Pole</a></i></b> <br>Intermediate Three <br> <i><a href= "https://www.skysirens.com.au/miss-oryx" style = "color: black"> Oryx </a></i></td>
-        <td> <b><i><a href = "https://www.skysirens.com.au/pearls-pole" style = "color: black;"> Pearls Pole</a></i></b><br> Intermediate One <br> <i><a href = "https://www.skysirens.com.au/arizona" style = "color: black"">Arizona</a></i> </td>
-        <td> <b><i><a href = "https://www.skysirens.com.au/babydoll-pole" style = "color: black;">Babydoll Pole</a></i></b> <br>Beginners <br> <i>Baby</i></td>
-        <td> <b><i><a href = "https://www.skysirens.com.au/pearls-pole" style = "color: black;"> Pearls Pole</a></i></b><br>Intermediate One <br> <i><a href = "https://www.skysirens.com.au/miss-sofia-rose" style = "color: black">Sofia</a></i></td>
-      
-      </tr>
-      
-       <tr>
-        <th> 6pm </th>
-        <td><b><i><a href = "https://www.skysirens.com.au/babydoll-pole" style = "color: black;">Babydoll Pole</a></i></b> <br>Beginners <br> <i><a href = "https://www.skysirens.com.au/miss-rose-royce" style = "color: black">Rose</a></i></td></td>
-        <td> <b><i><a href = "https://www.skysirens.com.au/contemporary-pole" style = "color: black;">Contemporary Pole</a></i></b><br> <i> <a href= "https://www.skysirens.com.au/miss-oryx" style = "color: black"> Oryx </a></i></td>
-        <td><b><i><a href = "https://www.skysirens.com.au/emeralds-pole" style = "color: black;">Emeralds Pole</a></i></b> <br>Intermediate Two <br> <i><a href = "https://www.skysirens.com.au/arizona" style = "color: black"">Arizona</a></i></td>
-        <td> <b><i><a href = "https://www.skysirens.com.au/emeralds-pole" style = "color: black;">Emeralds Pole</a></i></b> <br>Intermediate Two <br> <i>Allegra</i></td> </td>
-        <td> <b><i><a href = "https://www.skysirens.com.au/sugarpop-pole" style = "color: black;">Sugar Pop Pole</a> </b></i> <br> Pop Music Pole<br> <i><a href = "https://www.skysirens.com.au/miss-sofia-rose" style = "color: black">Sofia</a></i> </td>
-        
-      </tr>
-      
-      <tr>
-        <th> 7pm </th>
-        <td> <b><i><a href = "https://www.skysirens.com.au/sapphires-pole" style = "color: black;">Sapphires Pole</a></i></b> <br> Pre-advanced <br> <i><a href = "https://www.skysirens.com.au/arizona" style = "color: black"">Arizona</a></i>  </td>
-        <td> <b><i><a href = "https://www.skysirens.com.au/babydoll-pole" style = "color: black;">Babydoll Pole</a></i></b><br>Beginners <br> <i><a href = "https://www.skysirens.com.au/miss-sofia-rose" style = "color: black">Sofia</a></i></td> </td>
-        <td><b><i><a href = "https://www.skysirens.com.au/rubies-pole" style = "color: black;">Rubies Pole</a></i></b> <br> Intermediate Three <br> <i><a href = "https://www.skysirens.com.au/arizona" style = "color: black"">Arizona</a></i></td>
-        <td> <b><i><a href = "https://www.skysirens.com.au/pearls-pole" style = "color: black;"> Pearls Pole</a></i></b> <br> Intermediate One <br> <i>Gigi</i> </td>
-        <td>  <b><i><a href = "https://www.skysirens.com.au/babydoll-pole" style = "color: black;">Babydoll Pole</a></i></b> <br> Beginners <br> <i>Indy</i></td></td>
-        
-      </tr>
-      
-       <tr>
-        <th> 8pm </th>
-        <td> <b><i><a href = "https://www.skysirens.com.au/velvet-vixens" style = "color: black;">Vixens Pole</a></i></b> <br> Adv. Sexy Pole <br> <i> <a href = "https://www.skysirens.com.au/arizona" style = "color: black"">Arizona</a></i></td> </td>
-        <td>  <b><i><a href = "https://www.skysirens.com.au/emeralds-pole" style = "color: black;">Emeralds Pole</a></i></b> <br> Intermediate Two <br> <i><a href = "https://www.skysirens.com.au/miss-sofia-rose" style = "color: black">Sofia</a></i></td>
-        <td> <b><i><a href = "https://www.skysirens.com.au/pearls-pole" style = "color: black;"> Pearls Pole</a></i></b> <br> Intermediate One <br> <i><a href = "https://www.skysirens.com.au/arizona" style = "color: black"">Arizona</a></i> </td> 
-        <td> <b><i><a href = "https://www.skysirens.com.au/pearls-plus-pole" style = "color: black;">Pearls + Pole</a></i></b> <br> Intermediate 1-2 <br> <i><a href ="https://www.skysirens.com.au/quench" style = "color: black">Quench</a></i> </td> 
-        <td> <b><i><a href = "https://www.skysirens.com.au/rubies-pole" style = "color: black;">Rubies Pole</a></i></b> <br> Intermediate Three <br> <i><a href = "https://www.skysirens.com.au/miss-sofia-rose" style = "color: black">Sofia</a></i></td> </td>
-        
-      </tr>
-      
-       <tr>
-        <th> 9pm </th>
-        <td><b><i><a href = "https://www.skysirens.com.au/pearls-pole" style = "color: black;"> Pearls Pole</a></i></b> <br> Intermediate 1 <br> <i><a href = "https://www.skysirens.com.au/arizona" style = "color: black"">Arizona</a></i></td>
-        <td> <b><i><a href = "https://www.skysirens.com.au/velvet-vixenettes" style = "color: black;">Vixenettes Pole</a></i></b> <br> Sexy Pole <br> <i> <a href = "https://www.skysirens.com.au/miss-sofia-rose" style = "color: black">Sofia</a></i></td> </td>
-        <td> <b><i><a href = "https://www.skysirens.com.au/babydoll-pole" style = "color: black;">Babydoll Pole</a></i></b> <br> Beginners <br> <i>Indy</i></td> </td>
-        <td> <b><i><a href = "https://www.skysirens.com.au/rubies-pole" style = "color: black;">Rubies Pole</i></b></a> <br> Intermediate 3 <br> <i><a href ="https://www.skysirens.com.au/quench" style = "color: black">Quench</a></i></td>
-       <td></td>
-      </tr>
-    </tbody></table>
-    
-    
-    </div>
+
+
